@@ -1,23 +1,40 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, MessageSquareMore } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Services = () => {
+  const cardVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 }
+  };
+
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Nos Services
           </h2>
           <p className="text-gray-600">
             Des solutions sur mesure pour optimiser votre présence numérique et automatiser vos interactions clients
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Media Buying */}
-          <Card className="relative overflow-hidden group">
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Card className="relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-dulu-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <CardHeader>
               <div className="w-12 h-12 bg-dulu-orange/10 rounded-lg flex items-center justify-center mb-4">
@@ -39,10 +56,17 @@ const Services = () => {
                 En savoir plus
               </Button>
             </CardContent>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Automatisation */}
-          <Card className="relative overflow-hidden group">
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Card className="relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-dulu-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <CardHeader>
               <div className="w-12 h-12 bg-dulu-blue/10 rounded-lg flex items-center justify-center mb-4">
@@ -64,7 +88,8 @@ const Services = () => {
                 En savoir plus
               </Button>
             </CardContent>
-          </Card>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>

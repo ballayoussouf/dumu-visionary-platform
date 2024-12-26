@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -8,35 +9,63 @@ const Hero = () => {
       
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -right-64 -top-64 w-[800px] h-[800px] rounded-full bg-dulu-beige/30 blur-3xl" />
-        <div className="absolute -left-64 -bottom-64 w-[800px] h-[800px] rounded-full bg-dulu-blue/10 blur-3xl" />
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="absolute -right-64 -top-64 w-[800px] h-[800px] rounded-full bg-dulu-beige/30 blur-3xl" 
+        />
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="absolute -left-64 -bottom-64 w-[800px] h-[800px] rounded-full bg-dulu-blue/10 blur-3xl" 
+        />
       </div>
 
       {/* Images */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block">
-        <img 
+        <motion.img 
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.9 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           src="/lovable-uploads/848da8ec-0c7d-4500-8c7d-4975ae4038c9.png"
           alt="Digital Solutions"
-          className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl opacity-90"
+          className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl"
         />
-        <div className="absolute -left-20 -bottom-20">
+        <motion.div 
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="absolute -left-20 -bottom-20"
+        >
           <img 
             src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=400"
             alt="Tech Innovation"
             className="rounded-2xl w-[300px] h-[250px] object-cover shadow-xl"
           />
-        </div>
+        </motion.div>
       </div>
 
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl">
-          <div className="inline-block">
-            <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6 animate-fade-up [--animation-delay:100ms] opacity-0">
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="inline-block"
+          >
+            <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6">
               🚀 Solutions innovantes pour votre entreprise
             </span>
-          </div>
+          </motion.div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-up [--animation-delay:200ms] opacity-0">
+          <motion.h1 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-4xl md:text-6xl font-bold mb-6"
+          >
             Solutions numériques{" "}
             <span className="text-dulu-orange relative">
               innovantes
@@ -45,14 +74,24 @@ const Hero = () => {
               </svg>
             </span>
             <br />pour votre entreprise
-          </h1>
+          </motion.h1>
           
-          <p className="text-xl text-gray-600 mb-8 animate-fade-up [--animation-delay:400ms] opacity-0">
+          <motion.p 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-xl text-gray-600 mb-8"
+          >
             Experts en Media Buying et automatisation des réponses clients. 
             Propulsez votre entreprise vers le futur avec DULU.
-          </p>
+          </motion.p>
           
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up [--animation-delay:600ms] opacity-0">
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4"
+          >
             <Button size="lg" className="bg-dulu-orange hover:bg-dulu-orange/90 text-lg px-8">
               Découvrir nos services
               <ArrowRight className="ml-2" />
@@ -60,10 +99,15 @@ const Hero = () => {
             <Button size="lg" variant="outline" className="text-lg px-8">
               Contactez-nous
             </Button>
-          </div>
+          </motion.div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-8 animate-fade-up [--animation-delay:800ms] opacity-0">
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-8"
+          >
             <div>
               <div className="text-3xl font-bold text-dulu-orange">500+</div>
               <div className="text-gray-600">Clients satisfaits</div>
@@ -76,7 +120,7 @@ const Hero = () => {
               <div className="text-3xl font-bold text-dulu-orange">24/7</div>
               <div className="text-gray-600">Support client</div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
