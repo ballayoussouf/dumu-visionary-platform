@@ -23,30 +23,12 @@ const testimonials = [
 ];
 
 const partners = [
-  {
-    name: "TechCam",
-    logo: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=200"
-  },
-  {
-    name: "InnovCorp",
-    logo: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=200"
-  },
-  {
-    name: "StartupAfrica",
-    logo: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=200"
-  },
-  {
-    name: "DigitalCMR",
-    logo: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=200"
-  },
-  {
-    name: "AfricaTech",
-    logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200"
-  },
-  {
-    name: "CamerTech",
-    logo: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=200"
-  }
+  "TechCam",
+  "InnovCorp",
+  "StartupAfrica",
+  "DigitalCMR",
+  "AfricaTech",
+  "CamerTech"
 ];
 
 const Testimonials = () => {
@@ -92,12 +74,7 @@ const Testimonials = () => {
                 key={index}
                 className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-20"
               >
-                <img 
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="max-h-12 w-auto object-contain"
-                  title={partner.name}
-                />
+                <span className="text-gray-800 font-semibold">{partner}</span>
               </div>
             ))}
           </div>
