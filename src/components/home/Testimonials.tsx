@@ -90,13 +90,14 @@ const Testimonials = () => {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-24"
+                className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center space-y-2"
               >
                 <img 
                   src={partner.logo} 
                   alt={`Logo ${partner.name}`}
                   className="max-h-16 w-auto object-contain"
                 />
+                <span className="text-sm font-medium text-gray-700">{partner.name}</span>
               </div>
             ))}
           </div>
