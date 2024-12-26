@@ -15,13 +15,13 @@ const Hero = () => {
       {/* Images */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block">
         <img 
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600"
-          alt="Digital Solutions"
+          src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=600"
+          alt="Digital Solutions Expert"
           className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl opacity-90"
         />
         <div className="absolute -left-20 -bottom-20">
           <img 
-            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=400"
+            src="https://images.unsplash.com/photo-1573496130488-f3bd89d03653?auto=format&fit=crop&w=400"
             alt="Tech Innovation"
             className="rounded-2xl w-[300px] h-[250px] object-cover shadow-xl"
           />
