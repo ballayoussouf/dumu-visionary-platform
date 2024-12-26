@@ -23,12 +23,30 @@ const testimonials = [
 ];
 
 const partners = [
-  "TechCam",
-  "InnovCorp",
-  "StartupAfrica",
-  "DigitalCMR",
-  "AfricaTech",
-  "CamerTech"
+  {
+    name: "TechCam",
+    logo: "/lovable-uploads/271a2b32-44f0-45f1-a906-11dda9b39fa8.png"
+  },
+  {
+    name: "InnovCorp",
+    logo: "/lovable-uploads/409f827e-a8f3-44f0-bc43-76da555be71c.png"
+  },
+  {
+    name: "StartupAfrica",
+    logo: "/lovable-uploads/909b9624-9087-456e-af62-43a0449a899a.png"
+  },
+  {
+    name: "DigitalCMR",
+    logo: "/lovable-uploads/b2bb0fd6-226c-49ca-b58c-00dea7a7a57f.png"
+  },
+  {
+    name: "AfricaTech",
+    logo: "/lovable-uploads/b6cbd019-d4c0-4ce9-85a0-8d105d30205c.png"
+  },
+  {
+    name: "CamerTech",
+    logo: "/lovable-uploads/a93ce0b1-39ea-4ca8-b352-9c3075175a91.png"
+  }
 ];
 
 const Testimonials = () => {
@@ -72,9 +90,13 @@ const Testimonials = () => {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-20"
+                className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-24"
               >
-                <span className="text-gray-800 font-semibold">{partner}</span>
+                <img 
+                  src={partner.logo} 
+                  alt={`Logo ${partner.name}`}
+                  className="max-h-16 w-auto object-contain"
+                />
               </div>
             ))}
           </div>
