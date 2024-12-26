@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Images */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block">
         <img 
-          src="https://images.unsplash.com/photo-1534691157507-31c92ad6d42e?auto=format&fit=crop&w=600"
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600"
           alt="Digital Solutions"
           className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl opacity-90"
         />
