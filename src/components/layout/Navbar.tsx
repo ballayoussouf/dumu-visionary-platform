@@ -9,14 +9,14 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <a href="/" className="flex items-center space-x-2">
+        <div className="flex justify-between items-center h-20">
+          <a href="/" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/c5315432-6614-460a-8aba-cb35e74a138e.png" 
               alt="Flow by Dulu Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto" // Augmentation de la taille du logo
             />
-            <span className="font-heading text-xl font-bold text-dulu-purple">
+            <span className="font-heading text-2xl font-bold text-dulu-purple">
               Flow by Dulu
             </span>
           </a>
@@ -33,7 +33,7 @@ const Navbar = () => {
               Contact
             </a>
             <LanguageSwitch />
-            <Button className="bg-dulu-purple hover:bg-dulu-purple/90">
+            <Button className="bg-dulu-purple hover:bg-dulu-secondary text-white">
               Commencer
             </Button>
           </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 Contact
               </a>
               <LanguageSwitch />
-              <Button className="bg-dulu-purple hover:bg-dulu-purple/90 w-full">
+              <Button className="bg-dulu-purple hover:bg-dulu-secondary text-white w-full">
                 Commencer
               </Button>
             </div>
