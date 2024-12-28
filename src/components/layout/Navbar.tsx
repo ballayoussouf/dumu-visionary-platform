@@ -2,9 +2,16 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitch from "../ui/LanguageSwitch";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  
+  // Fonction pour gérer les liens de section
+  const getSectionLink = (section: string) => {
+    return location.pathname === "/" ? `#${section}` : `/#${section}`;
+  };
 
   return (
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b">
@@ -24,13 +31,13 @@ const Navbar = () => {
             <a href="/fastcom-pro" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               FastCom Pro
             </a>
-            <a href="#services" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
+            <a href={getSectionLink("services")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               Services
             </a>
-            <a href="#about" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
+            <a href={getSectionLink("about")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               À propos
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
+            <a href={getSectionLink("contact")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               Contact
             </a>
             <LanguageSwitch />
@@ -60,21 +67,21 @@ const Navbar = () => {
                 FastCom Pro
               </a>
               <a
-                href="#services"
+                href={getSectionLink("services")}
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </a>
               <a
-                href="#about"
+                href={getSectionLink("about")}
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 À propos
               </a>
               <a
-                href="#contact"
+                href={getSectionLink("contact")}
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >

@@ -1,7 +1,14 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  
+  // Fonction pour gérer les liens de section
+  const getSectionLink = (section: string) => {
+    return location.pathname === "/" ? `#${section}` : `/#${section}`;
+  };
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -20,17 +27,17 @@ const Footer = () => {
             <h4 className="font-heading text-lg font-semibold mb-4">Liens rapides</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-gray-400 hover:text-dulu-orange transition-colors">
+                <a href={getSectionLink("services")} className="text-gray-400 hover:text-dulu-orange transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-dulu-orange transition-colors">
+                <a href={getSectionLink("about")} className="text-gray-400 hover:text-dulu-orange transition-colors">
                   À propos
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-dulu-orange transition-colors">
+                <a href={getSectionLink("contact")} className="text-gray-400 hover:text-dulu-orange transition-colors">
                   Contact
                 </a>
               </li>
