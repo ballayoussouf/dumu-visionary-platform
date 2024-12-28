@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
   const location = useLocation();
   
-  // Fonction pour gérer les liens de section
   const getSectionLink = (section: string) => {
     return location.pathname === "/" ? `#${section}` : `/#${section}`;
   };
@@ -27,9 +26,9 @@ const Footer = () => {
             <h4 className="font-heading text-lg font-semibold mb-4">Liens rapides</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/fastcom-pro" className="text-gray-400 hover:text-dulu-orange transition-colors">
+                <Link to="/fastcom-pro" className="text-gray-400 hover:text-dulu-orange transition-colors">
                   FastCom Pro
-                </a>
+                </Link>
               </li>
               <li>
                 <a href={getSectionLink("services")} className="text-gray-400 hover:text-dulu-orange transition-colors">
