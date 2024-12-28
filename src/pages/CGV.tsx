@@ -11,7 +11,7 @@ const CGV = () => {
         className="fixed top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
         aria-label="Retour à l'accueil"
       >
-        <ArrowLeft className="h-6 w-6" />
+        <ArrowLeft className="h-6 w-6 text-white" />
       </button>
       <div className="container mx-auto px-4 py-8 prose prose-invert max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Conditions Générales de Vente (CGV)</h1>
