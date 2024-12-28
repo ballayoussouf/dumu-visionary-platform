@@ -21,6 +21,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <a href="/fastcom-pro" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
+              FastCom Pro
+            </a>
             <a href="#services" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               Services
             </a>
@@ -49,6 +52,13 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
+              <a
+                href="/fastcom-pro"
+                className="text-gray-600 hover:text-[#9b87f5] transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                FastCom Pro
+              </a>
               <a
                 href="#services"
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
