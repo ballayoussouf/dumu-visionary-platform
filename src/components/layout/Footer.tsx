@@ -12,6 +12,7 @@ const Footer = () => {
             <p className="text-gray-400">
               Solutions numériques innovantes pour votre entreprise
             </p>
+            <p className="text-gray-400 mt-2">RC/DLA/2018/B/3820</p>
           </div>
 
           {/* Quick Links */}
@@ -52,7 +53,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-gray-400">
                 <MapPin size={16} />
-                <span>Douala, Cameroun</span>
+                <span>Rue Mandessi Bell Bali-Douala</span>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Phone size={16} />
@@ -60,7 +61,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Mail size={16} />
-                <span>contact@flowbydulu.com</span>
+                <span>gaston.effa@gmail.com</span>
               </li>
             </ul>
           </div>
