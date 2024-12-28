@@ -25,7 +25,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         dulu: {
-          orange: "#F97316",
+          orange: "#9b87f5", // Changed to purple while keeping the key name for compatibility
           blue: "#0EA5E9",
           beige: "#FDE1D3",
         },
