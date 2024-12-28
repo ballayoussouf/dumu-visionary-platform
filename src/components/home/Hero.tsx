@@ -54,7 +54,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-block"
+            className="inline-block pt-20 md:pt-0" // Added padding-top for mobile
           >
             <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6">
               🚀 Solutions innovantes pour votre entreprise
