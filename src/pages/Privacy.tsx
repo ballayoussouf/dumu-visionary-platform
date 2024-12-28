@@ -1,9 +1,22 @@
+import { ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 const Privacy = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="container mx-auto px-4 py-8 prose prose-invert max-w-4xl">
-      <h1 className="text-4xl font-bold mb-8">Politique de Confidentialité</h1>
-      
-      <p>Chez <strong>DUDU Sarl</strong>, nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons les informations que vous nous fournissez lorsque vous utilisez nos services.</p>
+    <div className="relative">
+      <button
+        onClick={() => navigate("/")}
+        className="fixed top-4 left-4 p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+        aria-label="Retour à l'accueil"
+      >
+        <ArrowLeft className="h-6 w-6" />
+      </button>
+      <div className="container mx-auto px-4 py-8 prose prose-invert max-w-4xl">
+        <h1 className="text-4xl font-bold mb-8">Politique de Confidentialité</h1>
+        
+        <p>Chez <strong>DUDU Sarl</strong>, nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons les informations que vous nous fournissez lorsque vous utilisez nos services.</p>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">1. Données Collectées</h2>
       <p>Nous collectons différents types de données personnelles, notamment :</p>
@@ -55,6 +68,7 @@ const Privacy = () => {
       <p className="mt-8"><strong>Dernière mise à jour : 28 décembre 2024</strong></p>
 
       <p className="mt-4">Si vous avez des questions, n'hésitez pas à nous contacter. Merci de votre confiance !</p>
+      </div>
     </div>
   );
 };
