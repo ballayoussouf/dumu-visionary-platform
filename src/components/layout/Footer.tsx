@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-bold text-dulu-orange mb-4">DULU</h3>
+            <h3 className="font-heading text-2xl font-bold text-dulu-orange mb-4">DULU Sarl</h3>
             <p className="text-gray-400">
               Solutions numériques innovantes pour votre entreprise
             </p>
