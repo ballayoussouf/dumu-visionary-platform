@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -92,10 +93,12 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button size="lg" className="bg-dulu-orange hover:bg-dulu-orange/90 text-lg px-8">
-              Découvrir nos services
-              <ArrowRight className="ml-2" />
-            </Button>
+            <Link to="/fastcom-pro">
+              <Button size="lg" className="bg-dulu-orange hover:bg-dulu-orange/90 text-lg px-8">
+                Découvrir nos services
+                <ArrowRight className="ml-2" />
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="text-lg px-8">
               Contactez-nous
             </Button>
