@@ -30,7 +30,7 @@ const Hero = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 0.9 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          src="/lovable-uploads/0c8dfacc-323c-4bd7-bfe8-df2069c3ac29.png"
+          src="/lovable-uploads/848da8ec-0c7d-4500-8c7d-4975ae4038c9.png"
           alt="Digital Solutions"
           className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl"
         />
@@ -41,7 +41,7 @@ const Hero = () => {
           className="absolute -left-20 -bottom-20"
         >
           <img 
-            src="/lovable-uploads/e1cab55f-7ea8-4804-b6bc-fc5c144d266b.png"
+            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=400"
             alt="Tech Innovation"
             className="rounded-2xl w-[300px] h-[250px] object-cover shadow-xl"
           />
