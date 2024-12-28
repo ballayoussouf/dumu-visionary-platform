@@ -30,7 +30,7 @@ const Hero = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 0.9 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          src="/lovable-uploads/848da8ec-0c7d-4500-8c7d-4975ae4038c9.png"
+          src="/lovable-uploads/d221e0db-4859-4aa4-aa74-2646794e530b.png"
           alt="Digital Solutions"
           className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl"
         />
@@ -54,7 +54,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-block pt-20 md:pt-0" // Added padding-top for mobile
+            className="inline-block pt-20 md:pt-0"
           >
             <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6">
               🚀 Solutions innovantes pour votre entreprise
