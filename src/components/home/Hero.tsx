@@ -30,10 +30,22 @@ const Hero = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 0.9 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          src="/lovable-uploads/55f0c999-542a-44dc-a233-9e03fb27f87f.png"
-          alt="Professional at work"
+          src="/lovable-uploads/0c8dfacc-323c-4bd7-bfe8-df2069c3ac29.png"
+          alt="Digital Solutions"
           className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl"
         />
+        <motion.div 
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="absolute -left-20 -bottom-20"
+        >
+          <img 
+            src="/lovable-uploads/e1cab55f-7ea8-4804-b6bc-fc5c144d266b.png"
+            alt="Tech Innovation"
+            className="rounded-2xl w-[300px] h-[250px] object-cover shadow-xl"
+          />
+        </motion.div>
       </div>
 
       <div className="container mx-auto px-4 relative">
@@ -42,7 +54,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-block pt-20 md:pt-0"
+            className="inline-block pt-20 md:pt-0" // Added padding-top for mobile
           >
             <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6">
               🚀 Solutions innovantes pour votre entreprise
