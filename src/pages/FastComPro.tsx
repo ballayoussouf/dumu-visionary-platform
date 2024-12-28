@@ -68,7 +68,7 @@ const FastComPro = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center bg-[#9b87f5] p-12 rounded-xl">
+          <div className="text-center bg-[#9b87f5] p-12 rounded-xl mb-24">
             <h2 className="text-3xl font-bold text-white mb-6">Prêt à optimiser votre communication ?</h2>
             <Button 
               size="lg"
