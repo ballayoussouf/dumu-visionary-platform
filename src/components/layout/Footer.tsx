@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-bold text-dulu-orange mb-4">DULU Sarl</h3>
+            <h3 className="font-heading text-2xl font-bold text-dulu-orange mb-4 italic">Flow by Dulu</h3>
             <p className="text-gray-400">
               Solutions numériques innovantes pour votre entreprise
             </p>
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} DULU Sarl. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} <span className="italic">Flow by Dulu</span>. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
