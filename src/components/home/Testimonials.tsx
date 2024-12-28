@@ -59,7 +59,11 @@ const partners = [
 
 const Testimonials = () => {
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ 
+      delay: 2000, 
+      stopOnInteraction: false,
+      rootNode: (scrollTo) => scrollTo.parentElement
+    })
   );
 
   const containerVariants = {
@@ -134,13 +138,14 @@ const Testimonials = () => {
             opts={{
               align: "start",
               loop: true,
+              dragFree: true,
             }}
             plugins={[plugin.current]}
             className="w-full"
           >
             <CarouselContent>
-              {partners.map((partner, index) => (
-                <CarouselItem key={index} className="md:basis-1/6 lg:basis-1/6">
+              {[...partners, ...partners].map((partner, index) => (
+                <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/6">
                   <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center space-y-2 h-full">
                     <img 
                       src={partner.logo} 
