@@ -1,6 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const testimonials = [
   {
@@ -51,6 +58,10 @@ const partners = [
 ];
 
 const Testimonials = () => {
+  const plugin = useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false })
+  );
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -111,7 +122,7 @@ const Testimonials = () => {
           ))}
         </motion.div>
 
-        {/* Partners Section */}
+        {/* Partners Section with Carousel */}
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -119,27 +130,29 @@ const Testimonials = () => {
           className="text-center"
         >
           <h3 className="text-2xl font-semibold mb-8">Nos Partenaires</h3>
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8"
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[plugin.current]}
+            className="w-full"
           >
-            {partners.map((partner, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center space-y-2"
-              >
-                <img 
-                  src={partner.logo} 
-                  alt={`Logo ${partner.name}`}
-                  className="max-h-16 w-auto object-contain"
-                />
-                <span className="text-sm font-medium text-gray-700">{partner.name}</span>
-              </motion.div>
-            ))}
-          </motion.div>
+            <CarouselContent>
+              {partners.map((partner, index) => (
+                <CarouselItem key={index} className="md:basis-1/6 lg:basis-1/6">
+                  <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center space-y-2 h-full">
+                    <img 
+                      src={partner.logo} 
+                      alt={`Logo ${partner.name}`}
+                      className="max-h-16 w-auto object-contain"
+                    />
+                    <span className="text-sm font-medium text-gray-700">{partner.name}</span>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </motion.div>
       </div>
     </section>
