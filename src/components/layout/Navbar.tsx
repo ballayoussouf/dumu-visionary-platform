@@ -44,9 +44,11 @@ const Navbar = () => {
               Contact
             </a>
             <LanguageSwitch />
-            <Button className="bg-[#9b87f5] hover:bg-[#9b87f5]/90">
-              Commencer
-            </Button>
+            <a href={getSectionLink("contact")} className="inline-block">
+              <Button className="bg-[#9b87f5] hover:bg-[#9b87f5]/90">
+                Commencer
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,9 +100,15 @@ const Navbar = () => {
                 Contact
               </a>
               <LanguageSwitch />
-              <Button className="bg-[#9b87f5] hover:bg-[#9b87f5]/90 w-full">
-                Commencer
-              </Button>
+              <a 
+                href={getSectionLink("contact")} 
+                onClick={() => setIsOpen(false)}
+                className="w-full"
+              >
+                <Button className="bg-[#9b87f5] hover:bg-[#9b87f5]/90 w-full">
+                  Commencer
+                </Button>
+              </a>
             </div>
           </div>
         )}
