@@ -99,9 +99,11 @@ const Hero = () => {
                 <ArrowRight className="ml-2" />
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              Contactez-nous
-            </Button>
+            <a href="#contact">
+              <Button size="lg" variant="outline" className="text-lg px-8">
+                Contactez-nous
+              </Button>
+            </a>
           </motion.div>
 
           {/* Stats */}
