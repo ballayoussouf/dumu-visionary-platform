@@ -25,9 +25,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         dulu: {
-          purple: "#9b87f5",
-          secondary: "#7E69AB",
-          light: "#E5DEFF",
+          orange: "#F97316",
+          blue: "#0EA5E9",
+          beige: "#FDE1D3",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

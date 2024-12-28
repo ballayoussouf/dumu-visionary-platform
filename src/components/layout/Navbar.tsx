@@ -9,31 +9,24 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20">
-          <a href="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/c5315432-6614-460a-8aba-cb35e74a138e.png" 
-              alt="Flow by Dulu Logo" 
-              className="h-12 w-auto" // Augmentation de la taille du logo
-            />
-            <span className="font-heading text-2xl font-bold text-dulu-purple">
-              Flow by Dulu
-            </span>
+        <div className="flex justify-between items-center h-16">
+          <a href="/" className="font-heading text-2xl font-bold text-dulu-orange">
+            DULU
           </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-gray-600 hover:text-dulu-purple transition-colors">
+            <a href="#services" className="text-gray-600 hover:text-dulu-orange transition-colors">
               Services
             </a>
-            <a href="#about" className="text-gray-600 hover:text-dulu-purple transition-colors">
+            <a href="#about" className="text-gray-600 hover:text-dulu-orange transition-colors">
               À propos
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-dulu-purple transition-colors">
+            <a href="#contact" className="text-gray-600 hover:text-dulu-orange transition-colors">
               Contact
             </a>
             <LanguageSwitch />
-            <Button className="bg-dulu-purple hover:bg-dulu-secondary text-white">
+            <Button className="bg-dulu-orange hover:bg-dulu-orange/90">
               Commencer
             </Button>
           </div>
@@ -53,27 +46,27 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <a
                 href="#services"
-                className="text-gray-600 hover:text-dulu-purple transition-colors"
+                className="text-gray-600 hover:text-dulu-orange transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </a>
               <a
                 href="#about"
-                className="text-gray-600 hover:text-dulu-purple transition-colors"
+                className="text-gray-600 hover:text-dulu-orange transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 À propos
               </a>
               <a
                 href="#contact"
-                className="text-gray-600 hover:text-dulu-purple transition-colors"
+                className="text-gray-600 hover:text-dulu-orange transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </a>
               <LanguageSwitch />
-              <Button className="bg-dulu-purple hover:bg-dulu-secondary text-white w-full">
+              <Button className="bg-dulu-orange hover:bg-dulu-orange/90 w-full">
                 Commencer
               </Button>
             </div>
