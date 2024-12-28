@@ -83,7 +83,7 @@ const Hero = () => {
             className="text-xl text-gray-600 mb-8"
           >
             Experts en Media Buying et automatisation des réponses clients. 
-            Propulsez votre entreprise vers le futur avec DULU.
+            Propulsez votre entreprise vers le futur avec <i>Flow by Dulu</i>.
           </motion.p>
           
           <motion.div 
