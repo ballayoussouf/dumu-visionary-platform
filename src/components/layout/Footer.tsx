@@ -35,7 +35,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/cgv" className="text-gray-400 hover:text-dulu-orange transition-colors">
-                  CGV
+                  Conditions générales de ventes (CGV)
                 </Link>
               </li>
               <li>
