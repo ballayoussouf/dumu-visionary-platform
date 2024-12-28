@@ -28,7 +28,7 @@ const WhatsAppButton = () => {
           variant="default"
         >
           <img 
-            src="/lovable-uploads/9f2823ed-1602-4beb-9baa-b30f1afef601.png"
+            src="/lovable-uploads/2fd8c564-0b10-4ea6-9e82-059e2a5b6ee1.png"
             alt="WhatsApp"
             className="w-full h-full"
           />
