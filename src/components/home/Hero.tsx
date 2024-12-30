@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            Solutions numériques{" "}
+            Solutions digitales{" "}
             <span className="text-dulu-orange relative">
               innovantes
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 318 12" fill="none" xmlns="http://www.w3.org/2000/svg">
