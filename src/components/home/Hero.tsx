@@ -41,7 +41,7 @@ const Hero = () => {
           className="absolute -left-20 -bottom-20"
         >
           <img 
-            src="/lovable-uploads/b2bb0fd6-226c-49ca-b58c-00dea7a7a57f.png"
+            src="/lovable-uploads/409f827e-a8f3-44f0-bc43-76da555be71c.png"
             alt="Tech Innovation"
             className="rounded-2xl w-[300px] h-[250px] object-cover shadow-xl"
           />
