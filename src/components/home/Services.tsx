@@ -98,7 +98,7 @@ const Services = () => {
                   </li>
                   <li className="flex items-start">
                     <Share2 className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
-                    <span>Intégration multi-canaux</span>
+                    <span>Intégration multi-canal</span>
                   </li>
                   <li className="flex items-start">
                     <UserCog className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
