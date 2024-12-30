@@ -23,7 +23,7 @@ const WhatsAppButton = () => {
     <Popover>
       <PopoverTrigger asChild>
         <Button
-          className="fixed bottom-6 right-2 sm:right-6 w-24 h-24 p-0 bg-transparent hover:bg-transparent shadow-none transition-all duration-300 hover:scale-110 z-50"
+          className="fixed bottom-6 right-6 w-24 h-24 p-0 bg-transparent hover:bg-transparent shadow-none transition-all duration-300 hover:scale-110 z-50"
           size="icon"
           variant="default"
         >
