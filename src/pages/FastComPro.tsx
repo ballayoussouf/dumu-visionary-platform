@@ -1,84 +1,174 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Phone, Target, MessageSquareMore, Image, Users, PlayCircle, PieChart, FileSpreadsheet, CheckCircle2 } from "lucide-react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { motion } from "framer-motion";
 
 const FastComPro = () => {
+  const features = [
+    {
+      icon: MessageSquareMore,
+      title: "Conception du message publicitaire",
+      description: "Rédaction de messages impactants, optimisés pour captiver l'audience cible et rendre l'offre irrésistible."
+    },
+    {
+      icon: Target,
+      title: "Titres publicitaires accrocheurs",
+      description: "Création de titres engageants et persuasifs, parfaitement adaptés à vos objectifs de campagne."
+    },
+    {
+      icon: Image,
+      title: "Visuels créatifs",
+      description: "Élaboration de visuels percutants qui renforcent votre message et captent l'attention."
+    },
+    {
+      icon: Users,
+      title: "Ciblage précis",
+      description: "Paramétrage détaillé pour atteindre votre audience idéale (âge, sexe, intérêts, géolocalisation)."
+    },
+    {
+      icon: PlayCircle,
+      title: "Lancement optimisé",
+      description: "Mise en ligne professionnelle avec tous les réglages techniques nécessaires."
+    },
+    {
+      icon: PieChart,
+      title: "Optimisation du budget",
+      description: "Suivi quotidien et ajustements stratégiques pour maximiser votre retour sur investissement."
+    },
+    {
+      icon: FileSpreadsheet,
+      title: "Rapports détaillés",
+      description: "Analyse complète des performances : ROI, CPC, CTR, conversions et plus encore."
+    },
+    {
+      icon: Phone,
+      title: "Conseils de conversion (Offert)",
+      description: "Conseils pratiques pour convertir efficacement les leads générés en clients."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       
       <main className="container mx-auto px-4 pt-24 pb-32">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-16">
           {/* Hero Section */}
-          <div className="text-center space-y-4">
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-center space-y-6"
+          >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">FastCom Pro</h1>
-            <p className="text-xl text-gray-600">Solution avancée pour l'automatisation du media buying et la gestion des réponses</p>
-          </div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Transformez votre présence publicitaire avec notre expertise en Media Buying. 
+              Une approche qui rend votre offre irrésistible et maximise vos conversions.
+            </p>
+            <Button 
+              size="lg"
+              className="bg-dulu-orange hover:bg-dulu-orange/90"
+              onClick={() => window.location.href = "tel:+237693997244"}
+            >
+              <Phone className="mr-2 h-5 w-5" />
+              Contactez-nous maintenant
+            </Button>
+          </motion.div>
 
-          {/* Image Section */}
-          <div className="relative h-[400px] rounded-xl overflow-hidden">
+          {/* Main Image */}
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="relative h-[400px] rounded-xl overflow-hidden shadow-xl"
+          >
             <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-              alt="FastCom Pro Interface" 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+              alt="Media Buying Excellence"
               className="w-full h-full object-cover"
             />
-          </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
+              <div className="text-white p-8 max-w-2xl">
+                <h2 className="text-3xl font-bold mb-4">Excellence en Media Buying</h2>
+                <p className="text-lg">
+                  Notre expertise transforme vos campagnes publicitaires en véritables moteurs de croissance
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
-          {/* Features Section */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Media Buying Intelligent</h2>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Optimisation automatique des campagnes publicitaires</li>
-                <li>• Analyse en temps réel des performances</li>
-                <li>• Ajustement dynamique des budgets</li>
-                <li>• Ciblage précis des audiences</li>
-              </ul>
-            </div>
-            
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Automatisation des Réponses</h2>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Réponses instantanées aux messages clients</li>
-                <li>• Personnalisation avancée des réponses</li>
-                <li>• Gestion multicanale des communications</li>
-                <li>• Suivi détaillé des conversations</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="bg-white p-8 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Pourquoi choisir FastCom Pro ?</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="space-y-2">
-                <h3 className="font-semibold text-gray-900">Gain de Temps</h3>
-                <p className="text-gray-600">Automatisez vos tâches répétitives et concentrez-vous sur votre stratégie</p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-semibold text-gray-900">ROI Optimisé</h3>
-                <p className="text-gray-600">Maximisez vos résultats grâce à notre algorithme d'optimisation</p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-semibold text-gray-900">Support 24/7</h3>
-                <p className="text-gray-600">Une équipe d'experts à votre disposition pour vous accompagner</p>
-              </div>
-            </div>
+          {/* Features Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+              >
+                <Card className="h-full hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-dulu-orange/10 rounded-lg flex items-center justify-center mb-4">
+                      {<feature.icon className="text-dulu-orange" size={24} />}
+                    </div>
+                    <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
           </div>
 
           {/* CTA Section */}
-          <div className="text-center bg-[#9b87f5] p-12 rounded-xl mb-24">
-            <h2 className="text-3xl font-bold text-white mb-6">Prêt à optimiser votre communication ?</h2>
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bg-dulu-orange/10 p-8 md:p-12 rounded-xl text-center space-y-6"
+          >
+            <h2 className="text-3xl font-bold text-gray-900">Prêt à transformer votre stratégie publicitaire ?</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Découvrez comment notre expertise en Media Buying peut rendre votre offre irrésistible 
+              et maximiser vos conversions.
+            </p>
             <Button 
               size="lg"
-              variant="secondary"
-              className="bg-white text-[#9b87f5] hover:bg-gray-100"
+              className="bg-dulu-orange hover:bg-dulu-orange/90"
               onClick={() => window.location.href = "tel:+237693997244"}
             >
               <Phone className="mr-2 h-5 w-5" />
               Appelez-nous maintenant
             </Button>
+          </motion.div>
+
+          {/* Benefits Section */}
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold text-center">Pourquoi choisir notre expertise ?</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                "Optimisation continue des campagnes",
+                "Ciblage précis de votre audience",
+                "Messages publicitaires impactants",
+                "Maximisation du ROI",
+                "Rapports détaillés et transparents",
+                "Support dédié"
+              ].map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.1 * index }}
+                  className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm"
+                >
+                  <CheckCircle2 className="text-dulu-orange h-6 w-6 shrink-0" />
+                  <span className="text-gray-700">{benefit}</span>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </main>

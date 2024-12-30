@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart3, MessageSquareMore } from "lucide-react";
+import { BarChart3, MessageSquareMore, Target, FileSpreadsheet, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -35,26 +35,38 @@ const Services = () => {
             animate="visible"
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card className="flex flex-col min-h-[400px]">
+            <Card className="flex flex-col min-h-[500px] hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-12 h-12 bg-dulu-orange/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart3 className="text-dulu-orange" size={24} />
                 </div>
-                <CardTitle>Media Buying</CardTitle>
+                <CardTitle>Media Buying Expert</CardTitle>
                 <CardDescription>
-                  Optimisez vos campagnes publicitaires sur Meta et LinkedIn
+                  Optimisez vos campagnes publicitaires et maximisez votre ROI
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col flex-grow">
-                <ul className="space-y-2 text-gray-600 mb-6 flex-grow">
-                  <li>• Stratégies publicitaires personnalisées</li>
-                  <li>• Optimisation des conversions</li>
-                  <li>• Analyse de performance détaillée</li>
-                  <li>• Ciblage précis de votre audience</li>
+                <ul className="space-y-3 text-gray-600 mb-6 flex-grow">
+                  <li className="flex items-start">
+                    <Target className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
+                    <span>Conception de messages publicitaires impactants</span>
+                  </li>
+                  <li className="flex items-start">
+                    <MessageSquareMore className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
+                    <span>Création de titres et visuels accrocheurs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <FileSpreadsheet className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
+                    <span>Optimisation continue et rapports détaillés</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Phone className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
+                    <span>Conseils de conversion téléphonique offerts</span>
+                  </li>
                 </ul>
                 <Link to="/fastcom-pro" className="mt-auto w-full">
-                  <Button variant="outline" className="w-full cursor-pointer hover:bg-dulu-orange/10">
-                    En savoir plus
+                  <Button className="w-full bg-dulu-orange hover:bg-dulu-orange/90">
+                    Découvrir l'offre complète
                   </Button>
                 </Link>
               </CardContent>
@@ -68,7 +80,7 @@ const Services = () => {
             animate="visible"
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Card className="flex flex-col min-h-[400px]">
+            <Card className="flex flex-col min-h-[500px] hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-12 h-12 bg-dulu-blue/10 rounded-lg flex items-center justify-center mb-4">
                   <MessageSquareMore className="text-dulu-blue" size={24} />
