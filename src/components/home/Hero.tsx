@@ -45,7 +45,7 @@ const Hero = () => {
             className="inline-block pt-20 md:pt-0"
           >
             <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6">
-              🚀 Solutions innovantes pour votre entreprise
+              🚀 Solutions digitales pour votre entreprise
             </span>
           </motion.div>
           
