@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart3, MessageSquareMore, Target, FileSpreadsheet, Phone, Bot, Share2, UserCog, LineChart } from "lucide-react";
+import { BarChart3, MessageSquareMore, Target, FileSpreadsheet, Phone, Bot, Share2, UserCog, LineChart, UserRound } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -107,6 +107,10 @@ const Services = () => {
                   <li className="flex items-start">
                     <LineChart className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
                     <span>Suivi et analyse des interactions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <UserRound className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
+                    <span>Humanisation des messages</span>
                   </li>
                 </ul>
                 <Link to="/fastcom-pro" className="mt-auto w-full">
