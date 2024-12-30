@@ -102,7 +102,7 @@ const Hero = () => {
             className="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-8"
           >
             <div>
-              <div className="text-3xl font-bold text-dulu-orange">500+</div>
+              <div className="text-3xl font-bold text-dulu-orange">20+</div>
               <div className="text-gray-600">Clients satisfaits</div>
             </div>
             <div>
