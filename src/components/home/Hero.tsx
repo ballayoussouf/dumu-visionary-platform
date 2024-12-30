@@ -24,7 +24,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Images */}
+      {/* Main image */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block">
         <motion.img 
           initial={{ x: 100, opacity: 0 }}
@@ -34,18 +34,6 @@ const Hero = () => {
           alt="Digital Solutions"
           className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl"
         />
-        <motion.div 
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="absolute -left-20 -bottom-20"
-        >
-          <img 
-            src="/lovable-uploads/66ecbc96-ffc6-4463-83b6-93db4d7356c2.png"
-            alt="Tech Innovation"
-            className="rounded-2xl w-[300px] h-[250px] object-cover shadow-xl"
-          />
-        </motion.div>
       </div>
 
       <div className="container mx-auto px-4 relative">
