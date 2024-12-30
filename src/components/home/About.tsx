@@ -53,8 +53,8 @@ const About = () => {
             <div className="relative bg-white p-8 rounded-3xl shadow-xl">
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "5+", label: "Années d'expérience", color: "text-dulu-orange" },
-                  { value: "100+", label: "Clients satisfaits", color: "text-dulu-blue" },
+                  { value: "3+", label: "Années d'expérience", color: "text-dulu-orange" },
+                  { value: "20+", label: "Clients satisfaits", color: "text-dulu-blue" },
                   { value: "50+", label: "Projets réussis", color: "text-dulu-orange" },
                   { value: "24/7", label: "Support client", color: "text-dulu-blue" }
                 ].map((stat, index) => (
