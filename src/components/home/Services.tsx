@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart3, MessageSquareMore, Target, FileSpreadsheet, Phone } from "lucide-react";
+import { BarChart3, MessageSquareMore, Target, FileSpreadsheet, Phone, Bot, Share2, UserCog, LineChart } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -91,15 +91,27 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col flex-grow">
-                <ul className="space-y-2 text-gray-600 mb-6 flex-grow">
-                  <li>• Réponses automatisées intelligentes</li>
-                  <li>• Intégration multi-canaux</li>
-                  <li>• Personnalisation des messages</li>
-                  <li>• Suivi et analyse des interactions</li>
+                <ul className="space-y-3 text-gray-600 mb-6 flex-grow">
+                  <li className="flex items-start">
+                    <Bot className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
+                    <span>Réponses automatisées intelligentes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Share2 className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
+                    <span>Intégration multi-canaux</span>
+                  </li>
+                  <li className="flex items-start">
+                    <UserCog className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
+                    <span>Personnalisation des messages</span>
+                  </li>
+                  <li className="flex items-start">
+                    <LineChart className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
+                    <span>Suivi et analyse des interactions</span>
+                  </li>
                 </ul>
                 <Link to="/fastcom-pro" className="mt-auto w-full">
-                  <Button variant="outline" className="w-full cursor-pointer hover:bg-dulu-blue/10">
-                    En savoir plus
+                  <Button className="w-full bg-dulu-blue hover:bg-dulu-blue/90">
+                    Découvrir l'offre complète
                   </Button>
                 </Link>
               </CardContent>
