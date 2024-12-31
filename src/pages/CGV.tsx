@@ -54,7 +54,7 @@ const CGV = () => {
         <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.payment.title')}</h2>
         <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.payment.methods.title')}</h3>
         <ul>
-          {t('cgv.payment.methods.list', { returnObjects: true }).map((method: string, index: number) => (
+          {(t('cgv.payment.methods.list', { returnObjects: true }) as string[]).map((method: string, index: number) => (
             <li key={index}>{method}</li>
           ))}
         </ul>
