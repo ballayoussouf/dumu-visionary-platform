@@ -158,35 +158,5 @@
         "content": "Une équipe professionnelle qui comprend vraiment les enjeux du marché africain."
       }
     }
-  },
-  "legal": {
-    "cgv": {
-      "title": "Conditions Générales de Vente (CGV)",
-      "lastUpdate": "Dernière mise à jour",
-      "companyInfo": "Informations légales sur l'entreprise",
-      "products": "Produits et services proposés",
-      "order": "Commande et achat",
-      "pricing": "Tarifs et facturation",
-      "payment": "Paiement sécurisé",
-      "delivery": "Livraison et frais associés",
-      "withdrawal": "Droit de rétractation et retours",
-      "warranty": "Garanties et responsabilité",
-      "data": "Protection des données et cookies",
-      "disputes": "Litiges et juridictions compétentes",
-      "facebook": "Mentions spécifiques pour Facebook"
-    },
-    "privacy": {
-      "title": "Politique de Confidentialité",
-      "intro": "Chez DULU Sarl, nous nous engageons à protéger vos données personnelles",
-      "dataCollected": "Données Collectées",
-      "dataUsage": "Utilisation des Données",
-      "dataSharing": "Partage des Données",
-      "storage": "Stockage et Sécurité des Données",
-      "retention": "Durée de Conservation",
-      "rights": "Vos Droits",
-      "cookies": "Cookies",
-      "changes": "Modifications de la Politique de Confidentialité",
-      "contact": "Contact"
-    }
   }
 }
