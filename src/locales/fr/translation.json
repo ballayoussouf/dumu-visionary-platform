@@ -76,6 +76,11 @@
       "successDesc": "Nous vous répondrons dans les plus brefs délais."
     }
   },
+  "whatsapp": {
+    "title": "Envoyez-nous un message",
+    "defaultMessage": "Hello ! Je souhaite avoir plus d'information sur vos services...",
+    "sendButton": "Envoyer sur WhatsApp"
+  },
   "footer": {
     "quickLinks": "Liens rapides",
     "contact": "Contact",

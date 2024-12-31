@@ -4,11 +4,13 @@ import { useState } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { useTranslation } from "react-i18next";
 
 const WhatsAppButton = () => {
+  const { t } = useTranslation();
   const isMobile = useIsMobile();
   const phoneNumber = "237693997244";
-  const defaultMessage = "Hello ! Je souhaite avoir plus d'information sur vos services...";
+  const defaultMessage = t("whatsapp.defaultMessage");
   const [message, setMessage] = useState(defaultMessage);
   
   const getWhatsAppUrl = () => {
@@ -36,7 +38,7 @@ const WhatsAppButton = () => {
       </PopoverTrigger>
       <PopoverContent className="w-80 p-4" side="left" align="end">
         <div className="space-y-4">
-          <h4 className="font-medium">Envoyez-nous un message</h4>
+          <h4 className="font-medium">{t("whatsapp.title")}</h4>
           <Textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -50,7 +52,7 @@ const WhatsAppButton = () => {
           >
             <Button className="w-full bg-[#25D366] hover:bg-[#1da851]">
               <Send className="mr-2 h-4 w-4" />
-              Envoyer sur WhatsApp
+              {t("whatsapp.sendButton")}
             </Button>
           </a>
         </div>
