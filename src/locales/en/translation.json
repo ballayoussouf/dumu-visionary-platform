@@ -8,19 +8,59 @@
     "fastcomPro": "FastCom Pro"
   },
   "hero": {
-    "title": "Innovative Digital Solutions for Your Business",
-    "subtitle": "Transform your digital presence with our tailored solutions"
+    "badge": "🚀 Digital Solutions for Your Business",
+    "title": "Digital Solutions",
+    "highlight": "innovative",
+    "subtitle": "for your business",
+    "description": "Media Buying and customer response automation experts. Propel your business into the future with Flow by Dulu.",
+    "cta": {
+      "discover": "Discover Our Services",
+      "contact": "Contact Us"
+    },
+    "stats": {
+      "clients": "Happy Clients",
+      "satisfaction": "Satisfaction Rate",
+      "support": "Customer Support"
+    }
   },
   "about": {
     "title": "African Innovation,",
     "highlight": "Global Impact",
     "description1": "DULU Sarl was born from the vision of transforming the African digital landscape. Based in Douala, our company combines technical expertise with a deep understanding of local needs to deliver innovative digital solutions.",
     "description2": "Our mission is to propel African businesses into the digital future by providing cutting-edge tools and services tailored to their specific needs.",
+    "button": "Our Story",
     "stats": {
       "experience": "Years of Experience",
       "clients": "Happy Clients",
       "projects": "Successful Projects",
       "support": "Customer Support"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Tailored solutions to optimize your digital presence and automate your customer interactions",
+    "mediaBuying": {
+      "title": "Media Buying Expert",
+      "description": "Optimize your advertising campaigns and maximize your ROI",
+      "features": {
+        "messages": "Design of impactful advertising messages",
+        "titles": "Creation of catchy titles and visuals",
+        "optimization": "Continuous optimization and detailed reports",
+        "advice": "Free phone conversion advice"
+      },
+      "cta": "Discover the Complete Offer"
+    },
+    "automation": {
+      "title": "Response Automation",
+      "description": "Efficiently manage your customer communications",
+      "features": {
+        "responses": "Intelligent automated responses",
+        "integration": "Multi-channel integration",
+        "personalization": "Message personalization",
+        "analytics": "Interaction tracking and analysis",
+        "humanization": "Message humanization"
+      },
+      "cta": "Discover the Complete Offer"
     }
   },
   "contact": {
@@ -31,7 +71,9 @@
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "success": "Message sent!",
+      "successDesc": "We will get back to you as soon as possible."
     }
   },
   "footer": {
