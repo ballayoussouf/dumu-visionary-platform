@@ -158,5 +158,35 @@
         "content": "A professional team that truly understands the challenges of the African market."
       }
     }
+  },
+  "legal": {
+    "cgv": {
+      "title": "Terms of Service (ToS)",
+      "lastUpdate": "Last update",
+      "companyInfo": "Legal company information",
+      "products": "Products and services offered",
+      "order": "Order and purchase",
+      "pricing": "Pricing and billing",
+      "payment": "Secure payment",
+      "delivery": "Delivery and associated costs",
+      "withdrawal": "Right of withdrawal and returns",
+      "warranty": "Warranties and liability",
+      "data": "Data protection and cookies",
+      "disputes": "Disputes and jurisdiction",
+      "facebook": "Specific mentions for Facebook"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "At DULU Sarl, we are committed to protecting your personal data",
+      "dataCollected": "Data Collected",
+      "dataUsage": "Data Usage",
+      "dataSharing": "Data Sharing",
+      "storage": "Data Storage and Security",
+      "retention": "Data Retention",
+      "rights": "Your Rights",
+      "cookies": "Cookies",
+      "changes": "Privacy Policy Changes",
+      "contact": "Contact"
+    }
   }
 }

@@ -1,15 +1,18 @@
 import BackButton from "@/components/ui/back-button";
+import { useTranslation } from "react-i18next";
 
 const Privacy = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="relative">
       <BackButton />
       <div className="container mx-auto px-4 py-8 prose prose-invert max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Politique de Confidentialité</h1>
+        <h1 className="text-4xl font-bold mb-8">{t('legal.privacy.title')}</h1>
         
-        <p>Chez <strong>DUDU Sarl</strong>, nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons les informations que vous nous fournissez lorsque vous utilisez nos services.</p>
+        <p>{t('legal.privacy.intro')}</p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">1. Données Collectées</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">{t('legal.privacy.dataCollected')}</h2>
       <p>Nous collectons différents types de données personnelles, notamment :</p>
       <ul>
         <li><strong>Informations personnelles</strong> : nom, prénom, adresse électronique, numéro de téléphone.</li>
