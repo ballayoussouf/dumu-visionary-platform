@@ -48,7 +48,8 @@
     "subtitle": "Transformez votre présence publicitaire avec notre expertise en Media Buying et automatisation des réponses clients. Une approche complète qui maximise vos conversions.",
     "contactUs": "Contactez-nous maintenant",
     "mediaBuying": {
-      "title": "Services Media Buying",
+      "title": "Excellence en Media Buying",
+      "subtitle": "Notre expertise transforme vos campagnes publicitaires en véritables moteurs de croissance",
       "features": {
         "messageDesign": "Conception du message publicitaire",
         "titleDesign": "Conception des titres publicitaires",
@@ -78,6 +79,20 @@
         "customMessagesDesc": "Réponses adaptées selon le type de demande et le profil du client.",
         "fastProcessingDesc": "Gestion efficace des demandes clients avec des réponses instantanées et pertinentes."
       }
+    },
+    "benefits": {
+      "title": "Pourquoi choisir notre expertise ?",
+      "optimization": "Optimisation continue des campagnes",
+      "targeting": "Ciblage précis de votre audience",
+      "messages": "Messages publicitaires impactants",
+      "roi": "Maximisation du ROI",
+      "reports": "Rapports détaillés et transparents",
+      "support": "Support dédié et réponses automatisées 24/7"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre stratégie publicitaire ?",
+      "description": "Découvrez comment notre expertise en Media Buying et automatisation peut rendre votre offre irrésistible et maximiser vos conversions.",
+      "button": "Appelez-nous maintenant"
     }
   }
 }

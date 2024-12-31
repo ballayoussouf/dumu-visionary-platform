@@ -48,7 +48,8 @@
     "subtitle": "Transform your advertising presence with our Media Buying expertise and customer response automation. A comprehensive approach that maximizes your conversions.",
     "contactUs": "Contact Us Now",
     "mediaBuying": {
-      "title": "Media Buying Services",
+      "title": "Media Buying Excellence",
+      "subtitle": "Our expertise transforms your advertising campaigns into real growth engines",
       "features": {
         "messageDesign": "Advertising Message Design",
         "titleDesign": "Advertising Title Design",
@@ -78,6 +79,20 @@
         "customMessagesDesc": "Responses adapted according to the type of request and customer profile.",
         "fastProcessingDesc": "Efficient handling of customer requests with instant and relevant responses."
       }
+    },
+    "benefits": {
+      "title": "Why Choose Our Expertise?",
+      "optimization": "Continuous campaign optimization",
+      "targeting": "Precise audience targeting",
+      "messages": "Impactful advertising messages",
+      "roi": "ROI maximization",
+      "reports": "Detailed and transparent reports",
+      "support": "24/7 dedicated support and automated responses"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Advertising Strategy?",
+      "description": "Discover how our Media Buying expertise and automation can make your offer irresistible and maximize your conversions.",
+      "button": "Call Us Now"
     }
   }
 }

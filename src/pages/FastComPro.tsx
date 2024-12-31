@@ -1,12 +1,15 @@
-import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/card";
+import { Phone } from "lucide-react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { motion } from "framer-motion";
 import MediaBuyingFeatures from "@/components/fastcom/MediaBuyingFeatures";
 import AutomationFeatures from "@/components/fastcom/AutomationFeatures";
+import { useTranslation } from "react-i18next";
 
 const FastComPro = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -20,10 +23,9 @@ const FastComPro = () => {
             transition={{ duration: 0.5 }}
             className="text-center space-y-6"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">FastCom Pro</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">{t("fastcomPro.title")}</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transformez votre présence publicitaire avec notre expertise en Media Buying et 
-              automatisation des réponses clients. Une approche complète qui maximise vos conversions.
+              {t("fastcomPro.subtitle")}
             </p>
             <Button 
               size="lg"
@@ -31,7 +33,7 @@ const FastComPro = () => {
               onClick={() => window.location.href = "tel:+237693997244"}
             >
               <Phone className="mr-2 h-5 w-5" />
-              Contactez-nous maintenant
+              {t("fastcomPro.contactUs")}
             </Button>
           </motion.div>
 
@@ -49,9 +51,9 @@ const FastComPro = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center">
               <div className="text-white p-8 max-w-2xl">
-                <h2 className="text-3xl font-bold mb-4">Excellence en Media Buying</h2>
+                <h2 className="text-3xl font-bold mb-4">{t("fastcomPro.mediaBuying.title")}</h2>
                 <p className="text-lg">
-                  Notre expertise transforme vos campagnes publicitaires en véritables moteurs de croissance
+                  {t("fastcomPro.mediaBuying.subtitle")}
                 </p>
               </div>
             </div>
@@ -65,15 +67,15 @@ const FastComPro = () => {
 
           {/* Benefits Section */}
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-center">Pourquoi choisir notre expertise ?</h2>
+            <h2 className="text-3xl font-bold text-center">{t("fastcomPro.benefits.title")}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                "Optimisation continue des campagnes",
-                "Ciblage précis de votre audience",
-                "Messages publicitaires impactants",
-                "Maximisation du ROI",
-                "Rapports détaillés et transparents",
-                "Support dédié et réponses automatisées 24/7"
+                t("fastcomPro.benefits.optimization"),
+                t("fastcomPro.benefits.targeting"),
+                t("fastcomPro.benefits.messages"),
+                t("fastcomPro.benefits.roi"),
+                t("fastcomPro.benefits.reports"),
+                t("fastcomPro.benefits.support")
               ].map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -82,7 +84,7 @@ const FastComPro = () => {
                   transition={{ duration: 0.5, delay: 0.1 * index }}
                   className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm"
                 >
-                  <CheckCircle2 className="text-dulu-orange h-6 w-6 shrink-0" />
+                  <Phone className="text-dulu-orange h-6 w-6 shrink-0" />
                   <span className="text-gray-700">{benefit}</span>
                 </motion.div>
               ))}
@@ -96,10 +98,9 @@ const FastComPro = () => {
             transition={{ duration: 0.5 }}
             className="bg-dulu-orange/10 p-8 md:p-12 rounded-xl text-center space-y-6"
           >
-            <h2 className="text-3xl font-bold text-gray-900">Prêt à transformer votre stratégie publicitaire ?</h2>
+            <h2 className="text-3xl font-bold text-gray-900">{t("fastcomPro.cta.title")}</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Découvrez comment notre expertise en Media Buying et automatisation peut rendre votre offre irrésistible 
-              et maximiser vos conversions.
+              {t("fastcomPro.cta.description")}
             </p>
             <Button 
               size="lg"
@@ -107,7 +108,7 @@ const FastComPro = () => {
               onClick={() => window.location.href = "tel:+237693997244"}
             >
               <Phone className="mr-2 h-5 w-5" />
-              Appelez-nous maintenant
+              {t("fastcomPro.cta.button")}
             </Button>
           </motion.div>
         </div>
