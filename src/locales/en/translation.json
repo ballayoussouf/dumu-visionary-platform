@@ -158,51 +158,5 @@
         "content": "A professional team that truly understands the challenges of the African market."
       }
     }
-  },
-  "cgv": {
-    "title": "Terms of Service (ToS)",
-    "companyInfo": {
-      "title": "Legal Company Information",
-      "list": {
-        "name": "Company name: DULU Sarl",
-        "address": "Complete address: Mandessi Bell Street, Bali-Douala",
-        "registration": "Registration number: RC/DLA/2018/B/3820",
-        "email": "Contact email: gaston.effa@gmail.com",
-        "phone": "Phone number: 00237693997244",
-        "returns": "Returns address: Mandessi Bell Street, Bali-Douala"
-      }
-    },
-    "products": {
-      "title": "Products and Services Offered",
-      "description": "DULU Sarl offers:",
-      "services": {
-        "title": "Products:",
-        "description": "A Meta ads and other social networks advertising service, and a customer response automation service for entrepreneurs, business owners or managers",
-        "usage": "These services allow users to improve their sales and free themselves from repetitive tasks."
-      }
-    }
-  },
-  "privacy": {
-    "title": "Privacy Policy",
-    "intro": "At DULU Sarl, we are committed to protecting your personal data. This privacy policy explains how we collect, use, share and protect the information you provide to us when using our services.",
-    "dataCollection": {
-      "title": "Data Collection",
-      "description": "We collect different types of personal data, including:",
-      "types": {
-        "personal": "Personal information: name, surname, email address, phone number",
-        "technical": "Technical data: IP address, browser type, connection data",
-        "usage": "Usage data: pages visited, interactions with our services"
-      }
-    },
-    "dataUsage": {
-      "title": "Data Usage",
-      "description": "Your data is used to:",
-      "purposes": {
-        "service": "Provide, improve and personalize our services",
-        "orders": "Process your orders and respond to your requests",
-        "communication": "Send commercial communications (with your consent)",
-        "security": "Ensure the security of our services"
-      }
-    }
   }
 }
