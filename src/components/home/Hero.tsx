@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative min-h-screen flex items-center pattern-bg overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/50" />
@@ -45,7 +48,7 @@ const Hero = () => {
             className="inline-block pt-20 md:pt-0"
           >
             <span className="inline-flex items-center rounded-full bg-dulu-beige px-4 py-1 text-sm font-medium text-dulu-orange mb-6">
-              🚀 Solutions digitales pour votre entreprise
+              {t("hero.badge")}
             </span>
           </motion.div>
           
@@ -55,14 +58,15 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            Solutions digitales{" "}
+            {t("hero.title")}{" "}
             <span className="text-dulu-orange relative">
-              innovantes
+              {t("hero.highlight")}
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 318 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M317 11C217.5 11 118.5 1 1 1" stroke="#F97316" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </span>
-            <br />pour votre entreprise
+            <br />
+            {t("hero.subtitle")}
           </motion.h1>
           
           <motion.p 
@@ -71,8 +75,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-xl text-gray-600 mb-8"
           >
-            Experts en Media Buying et automatisation des réponses clients. 
-            Propulsez votre entreprise vers le futur avec <i><b>Flow by Dulu</b></i>.
+            {t("hero.description")}
           </motion.p>
           
           <motion.div 
@@ -83,13 +86,13 @@ const Hero = () => {
           >
             <Link to="/fastcom-pro">
               <Button size="lg" className="bg-dulu-orange hover:bg-dulu-orange/90 text-lg px-8">
-                Découvrir nos services
+                {t("hero.cta.discover")}
                 <ArrowRight className="ml-2" />
               </Button>
             </Link>
             <a href="#contact">
               <Button size="lg" variant="outline" className="text-lg px-8">
-                Contactez-nous
+                {t("hero.cta.contact")}
               </Button>
             </a>
           </motion.div>
@@ -103,15 +106,15 @@ const Hero = () => {
           >
             <div>
               <div className="text-3xl font-bold text-dulu-orange">20+</div>
-              <div className="text-gray-600">Clients satisfaits</div>
+              <div className="text-gray-600">{t("hero.stats.clients")}</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-dulu-blue">98%</div>
-              <div className="text-gray-600">Taux de satisfaction</div>
+              <div className="text-gray-600">{t("hero.stats.satisfaction")}</div>
             </div>
             <div className="col-span-2 sm:col-span-1">
               <div className="text-3xl font-bold text-dulu-orange">24/7</div>
-              <div className="text-gray-600">Support client</div>
+              <div className="text-gray-600">{t("hero.stats.support")}</div>
             </div>
           </motion.div>
         </div>

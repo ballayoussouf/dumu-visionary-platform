@@ -3,8 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { BarChart3, MessageSquareMore, Target, FileSpreadsheet, Phone, Bot, Share2, UserCog, LineChart, UserRound } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+  
   const cardVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: { y: 0, opacity: 1 }
@@ -20,10 +23,10 @@ const Services = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nos Services
+            {t("services.title")}
           </h2>
           <p className="text-gray-600">
-            Des solutions sur mesure pour optimiser votre présence numérique et automatiser vos interactions clients
+            {t("services.subtitle")}
           </p>
         </motion.div>
 
@@ -40,33 +43,33 @@ const Services = () => {
                 <div className="w-12 h-12 bg-dulu-orange/10 rounded-lg flex items-center justify-center mb-4">
                   <BarChart3 className="text-dulu-orange" size={24} />
                 </div>
-                <CardTitle>Media Buying Expert</CardTitle>
+                <CardTitle>{t("services.mediaBuying.title")}</CardTitle>
                 <CardDescription>
-                  Optimisez vos campagnes publicitaires et maximisez votre ROI
+                  {t("services.mediaBuying.description")}
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col flex-grow">
                 <ul className="space-y-3 text-gray-600 mb-6 flex-grow">
                   <li className="flex items-start">
                     <Target className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
-                    <span>Conception de messages publicitaires impactants</span>
+                    <span>{t("services.mediaBuying.features.messages")}</span>
                   </li>
                   <li className="flex items-start">
                     <MessageSquareMore className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
-                    <span>Création de titres et visuels accrocheurs</span>
+                    <span>{t("services.mediaBuying.features.titles")}</span>
                   </li>
                   <li className="flex items-start">
                     <FileSpreadsheet className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
-                    <span>Optimisation continue et rapports détaillés</span>
+                    <span>{t("services.mediaBuying.features.optimization")}</span>
                   </li>
                   <li className="flex items-start">
                     <Phone className="mr-2 h-5 w-5 text-dulu-orange shrink-0" />
-                    <span>Conseils de conversion téléphonique offerts</span>
+                    <span>{t("services.mediaBuying.features.advice")}</span>
                   </li>
                 </ul>
                 <Link to="/fastcom-pro" className="mt-auto w-full">
                   <Button className="w-full bg-dulu-orange hover:bg-dulu-orange/90">
-                    Découvrir l'offre complète
+                    {t("services.mediaBuying.cta")}
                   </Button>
                 </Link>
               </CardContent>
@@ -85,37 +88,37 @@ const Services = () => {
                 <div className="w-12 h-12 bg-dulu-blue/10 rounded-lg flex items-center justify-center mb-4">
                   <MessageSquareMore className="text-dulu-blue" size={24} />
                 </div>
-                <CardTitle>Automatisation des réponses</CardTitle>
+                <CardTitle>{t("services.automation.title")}</CardTitle>
                 <CardDescription>
-                  Gérez efficacement vos communications clients
+                  {t("services.automation.description")}
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col flex-grow">
                 <ul className="space-y-3 text-gray-600 mb-6 flex-grow">
                   <li className="flex items-start">
                     <Bot className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
-                    <span>Réponses automatisées intelligentes</span>
+                    <span>{t("services.automation.features.responses")}</span>
                   </li>
                   <li className="flex items-start">
                     <Share2 className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
-                    <span>Intégration multi-canal</span>
+                    <span>{t("services.automation.features.integration")}</span>
                   </li>
                   <li className="flex items-start">
                     <UserCog className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
-                    <span>Personnalisation des messages</span>
+                    <span>{t("services.automation.features.personalization")}</span>
                   </li>
                   <li className="flex items-start">
                     <LineChart className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
-                    <span>Suivi et analyse des interactions</span>
+                    <span>{t("services.automation.features.analytics")}</span>
                   </li>
                   <li className="flex items-start">
                     <UserRound className="mr-2 h-5 w-5 text-dulu-blue shrink-0" />
-                    <span>Humanisation des messages</span>
+                    <span>{t("services.automation.features.humanization")}</span>
                   </li>
                 </ul>
                 <Link to="/fastcom-pro" className="mt-auto w-full">
                   <Button className="w-full bg-dulu-blue hover:bg-dulu-blue/90">
-                    Découvrir l'offre complète
+                    {t("services.automation.cta")}
                   </Button>
                 </Link>
               </CardContent>

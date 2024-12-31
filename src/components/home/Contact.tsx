@@ -3,15 +3,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message envoyé !",
-      description: "Nous vous répondrons dans les plus brefs délais.",
+      title: t("contact.form.success"),
+      description: t("contact.form.successDesc"),
     });
   };
 
@@ -42,10 +44,10 @@ const Contact = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Contactez-nous
+            {t("contact.title")}
           </h2>
           <p className="text-gray-600">
-            Prêt à transformer votre présence numérique ? Contactez-nous dès aujourd'hui.
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -59,17 +61,17 @@ const Contact = () => {
             <motion.div variants={itemVariants} className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Nom complet
+                  {t("contact.form.fullName")}
                 </label>
                 <Input
                   id="name"
-                  placeholder="Votre nom"
+                  placeholder={t("contact.form.fullName")}
                   required
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email
+                  {t("contact.form.email")}
                 </label>
                 <Input
                   id="email"
@@ -82,22 +84,22 @@ const Contact = () => {
 
             <motion.div variants={itemVariants}>
               <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                Sujet
+                {t("contact.form.subject")}
               </label>
               <Input
                 id="subject"
-                placeholder="Sujet de votre message"
+                placeholder={t("contact.form.subject")}
                 required
               />
             </motion.div>
 
             <motion.div variants={itemVariants}>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                Message
+                {t("contact.form.message")}
               </label>
               <Textarea
                 id="message"
-                placeholder="Votre message"
+                placeholder={t("contact.form.message")}
                 className="min-h-[150px]"
                 required
               />
@@ -105,7 +107,7 @@ const Contact = () => {
 
             <motion.div variants={itemVariants}>
               <Button type="submit" className="w-full bg-dulu-orange hover:bg-dulu-orange/90">
-                Envoyer le message
+                {t("contact.form.submit")}
               </Button>
             </motion.div>
           </form>

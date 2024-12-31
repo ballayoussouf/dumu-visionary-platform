@@ -20,9 +20,13 @@ i18n
   .init({
     resources,
     fallbackLng: 'fr',
-    lng: 'fr', // langue par défaut
+    lng: 'fr',
     interpolation: {
       escapeValue: false
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage']
     }
   });
 
