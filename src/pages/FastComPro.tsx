@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
