@@ -57,7 +57,15 @@
         "campaign": "Lancement de la campagne Facebook",
         "budget": "Optimisation du budget publicitaire",
         "report": "Rapport de campagne détaillé",
-        "phoneAdvice": "Conseils de conversion téléphonique (Offert)"
+        "phoneAdvice": "Conseils de conversion téléphonique (Offert)",
+        "messageDesc": "Rédaction de messages impactants, optimisés pour captiver l'audience cible et rendre l'offre irrésistible.",
+        "titleDesc": "Création de titres accrocheurs et engageants, adaptés à l'objectif de la campagne.",
+        "imageDesc": "Élaboration ou sélection de visuels créatifs et percutants, renforçant le message.",
+        "targetingDesc": "Paramétrage précis pour atteindre efficacement la bonne audience (âge, sexe, intérêts, géolocalisation, etc.).",
+        "campaignDesc": "Mise en ligne des annonces avec tous les réglages techniques nécessaires.",
+        "budgetDesc": "Suivi quotidien et ajustements stratégiques pour maximiser le ROI.",
+        "reportDesc": "Analyse complète des performances : ROI, CPC, CTR, conversions, etc.",
+        "phoneAdviceDesc": "Conseils pratiques pour convertir efficacement les leads générés."
       }
     },
     "automation": {
@@ -65,7 +73,10 @@
       "features": {
         "autoResponses": "Réponses Automatisées",
         "customMessages": "Messages Personnalisés",
-        "fastProcessing": "Traitement Rapide"
+        "fastProcessing": "Traitement Rapide",
+        "autoResponsesDesc": "Système intelligent qui répond instantanément aux messages de vos clients 24h/24 et 7j/7.",
+        "customMessagesDesc": "Réponses adaptées selon le type de demande et le profil du client.",
+        "fastProcessingDesc": "Gestion efficace des demandes clients avec des réponses instantanées et pertinentes."
       }
     }
   }

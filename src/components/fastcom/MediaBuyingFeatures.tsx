@@ -10,42 +10,42 @@ const MediaBuyingFeatures = () => {
     {
       icon: MessageSquareMore,
       title: t("fastcomPro.mediaBuying.features.messageDesign"),
-      description: "Rédaction de messages impactants, optimisés pour captiver l'audience cible et rendre l'offre irrésistible."
+      description: t("fastcomPro.mediaBuying.features.messageDesc")
     },
     {
       icon: MessageSquareMore,
       title: t("fastcomPro.mediaBuying.features.titleDesign"),
-      description: "Création de titres accrocheurs et engageants, adaptés à l'objectif de la campagne."
+      description: t("fastcomPro.mediaBuying.features.titleDesc")
     },
     {
       icon: Image,
       title: t("fastcomPro.mediaBuying.features.imageDesign"),
-      description: "Élaboration ou sélection de visuels créatifs et percutants, renforçant le message."
+      description: t("fastcomPro.mediaBuying.features.imageDesc")
     },
     {
       icon: Target,
       title: t("fastcomPro.mediaBuying.features.targeting"),
-      description: "Paramétrage précis pour atteindre efficacement la bonne audience (âge, sexe, intérêts, géolocalisation, etc.)."
+      description: t("fastcomPro.mediaBuying.features.targetingDesc")
     },
     {
       icon: Facebook,
       title: t("fastcomPro.mediaBuying.features.campaign"),
-      description: "Mise en ligne des annonces avec tous les réglages techniques nécessaires."
+      description: t("fastcomPro.mediaBuying.features.campaignDesc")
     },
     {
       icon: PieChart,
       title: t("fastcomPro.mediaBuying.features.budget"),
-      description: "Suivi quotidien et ajustements stratégiques pour maximiser le ROI."
+      description: t("fastcomPro.mediaBuying.features.budgetDesc")
     },
     {
       icon: FileSpreadsheet,
       title: t("fastcomPro.mediaBuying.features.report"),
-      description: "Analyse complète des performances : ROI, CPC, CTR, conversions, etc."
+      description: t("fastcomPro.mediaBuying.features.reportDesc")
     },
     {
       icon: Phone,
       title: t("fastcomPro.mediaBuying.features.phoneAdvice"),
-      description: "Conseils pratiques pour convertir efficacement les leads générés."
+      description: t("fastcomPro.mediaBuying.features.phoneAdviceDesc")
     }
   ];
 

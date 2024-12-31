@@ -10,17 +10,17 @@ const AutomationFeatures = () => {
     {
       icon: Bot,
       title: t("fastcomPro.automation.features.autoResponses"),
-      description: "Système intelligent qui répond instantanément aux messages de vos clients 24h/24 et 7j/7."
+      description: t("fastcomPro.automation.features.autoResponsesDesc")
     },
     {
       icon: MessageSquare,
       title: t("fastcomPro.automation.features.customMessages"),
-      description: "Réponses adaptées selon le type de demande et le profil du client."
+      description: t("fastcomPro.automation.features.customMessagesDesc")
     },
     {
       icon: Zap,
       title: t("fastcomPro.automation.features.fastProcessing"),
-      description: "Gestion efficace des demandes clients avec des réponses instantanées et pertinentes."
+      description: t("fastcomPro.automation.features.fastProcessingDesc")
     }
   ];
 

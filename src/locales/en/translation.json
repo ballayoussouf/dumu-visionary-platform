@@ -57,7 +57,15 @@
         "campaign": "Facebook Campaign Launch",
         "budget": "Budget Optimization",
         "report": "Detailed Campaign Report",
-        "phoneAdvice": "Phone Conversion Tips (Free)"
+        "phoneAdvice": "Phone Conversion Tips (Free)",
+        "messageDesc": "Writing impactful messages, optimized to captivate the target audience and make the offer irresistible.",
+        "titleDesc": "Creation of catchy and engaging titles, adapted to the campaign objective.",
+        "imageDesc": "Development or selection of creative and striking visuals, reinforcing the message.",
+        "targetingDesc": "Precise settings to effectively reach the right audience (age, gender, interests, geolocation, etc.).",
+        "campaignDesc": "Launch of ads with all necessary technical settings.",
+        "budgetDesc": "Daily monitoring and strategic adjustments to maximize ROI.",
+        "reportDesc": "Complete performance analysis: ROI, CPC, CTR, conversions, etc.",
+        "phoneAdviceDesc": "Practical advice for effectively converting generated leads."
       }
     },
     "automation": {
@@ -65,7 +73,10 @@
       "features": {
         "autoResponses": "Automated Responses",
         "customMessages": "Custom Messages",
-        "fastProcessing": "Fast Processing"
+        "fastProcessing": "Fast Processing",
+        "autoResponsesDesc": "Intelligent system that responds instantly to your customers' messages 24/7.",
+        "customMessagesDesc": "Responses adapted according to the type of request and customer profile.",
+        "fastProcessingDesc": "Efficient handling of customer requests with instant and relevant responses."
       }
     }
   }
