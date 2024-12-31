@@ -8,19 +8,59 @@
     "fastcomPro": "FastCom Pro"
   },
   "hero": {
-    "title": "Solutions numériques innovantes pour votre entreprise",
-    "subtitle": "Transformez votre présence numérique avec nos solutions sur mesure"
+    "badge": "🚀 Solutions digitales pour votre entreprise",
+    "title": "Solutions digitales",
+    "highlight": "innovantes",
+    "subtitle": "pour votre entreprise",
+    "description": "Experts en Media Buying et automatisation des réponses clients. Propulsez votre entreprise vers le futur avec Flow by Dulu.",
+    "cta": {
+      "discover": "Découvrir nos services",
+      "contact": "Contactez-nous"
+    },
+    "stats": {
+      "clients": "Clients satisfaits",
+      "satisfaction": "Taux de satisfaction",
+      "support": "Support client"
+    }
   },
   "about": {
     "title": "Innovation africaine,",
     "highlight": "impact mondial",
     "description1": "DULU Sarl est née de la vision de transformer le paysage numérique africain. Basée à Douala, notre entreprise combine expertise technique et compréhension profonde des besoins locaux pour offrir des solutions numériques innovantes.",
     "description2": "Notre mission est de propulser les entreprises africaines vers le futur numérique en leur fournissant des outils et services de pointe, adaptés à leurs besoins spécifiques.",
+    "button": "Notre histoire",
     "stats": {
       "experience": "Années d'expérience",
       "clients": "Clients satisfaits",
       "projects": "Projets réussis",
       "support": "Support client"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions sur mesure pour optimiser votre présence numérique et automatiser vos interactions clients",
+    "mediaBuying": {
+      "title": "Media Buying Expert",
+      "description": "Optimisez vos campagnes publicitaires et maximisez votre ROI",
+      "features": {
+        "messages": "Conception de messages publicitaires impactants",
+        "titles": "Création de titres et visuels accrocheurs",
+        "optimization": "Optimisation continue et rapports détaillés",
+        "advice": "Conseils de conversion téléphonique offerts"
+      },
+      "cta": "Découvrir l'offre complète"
+    },
+    "automation": {
+      "title": "Automatisation des réponses",
+      "description": "Gérez efficacement vos communications clients",
+      "features": {
+        "responses": "Réponses automatisées intelligentes",
+        "integration": "Intégration multi-canal",
+        "personalization": "Personnalisation des messages",
+        "analytics": "Suivi et analyse des interactions",
+        "humanization": "Humanisation des messages"
+      },
+      "cta": "Découvrir l'offre complète"
     }
   },
   "contact": {
@@ -31,7 +71,9 @@
       "email": "Email",
       "subject": "Sujet",
       "message": "Message",
-      "submit": "Envoyer le message"
+      "submit": "Envoyer le message",
+      "success": "Message envoyé !",
+      "successDesc": "Nous vous répondrons dans les plus brefs délais."
     }
   },
   "footer": {
