@@ -18,9 +18,9 @@ const Footer = () => {
           <div>
             <h3 className="font-heading text-2xl font-bold text-dulu-orange mb-4">DULU Sarl</h3>
             <p className="text-gray-400">
-              Transformez votre présence numérique avec nos solutions sur mesure
+              {t("footer.description")}
             </p>
-            <p className="text-gray-400 mt-2">RC/DLA/2018/B/3820</p>
+            <p className="text-gray-400 mt-2">{t("footer.rcNumber")}</p>
           </div>
 
           {/* Quick Links */}
@@ -106,7 +106,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
