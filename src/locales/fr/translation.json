@@ -158,5 +158,51 @@
         "content": "Une équipe professionnelle qui comprend vraiment les enjeux du marché africain."
       }
     }
+  },
+  "cgv": {
+    "title": "Conditions Générales de Vente (CGV)",
+    "companyInfo": {
+      "title": "Informations légales sur l'entreprise",
+      "list": {
+        "name": "Nom de l'entreprise : DULU Sarl",
+        "address": "Adresse complète : Rue Mandessi Bell Bali-Douala",
+        "registration": "Numéro d'enregistrement : RC/DLA/2018/B/3820",
+        "email": "Email de contact : gaston.effa@gmail.com",
+        "phone": "Numéro de téléphone : 00237693997244",
+        "returns": "Adresse pour les retours : Rue Mandessi Bell Bali-Douala"
+      }
+    },
+    "products": {
+      "title": "Produits et services proposés",
+      "description": "DULU Sarl propose :",
+      "services": {
+        "title": "Produits :",
+        "description": "Un service de publicité Meta ads et autres réseaux sociaux, et un service d'automatisation de la réponse aux clients pour les entrepreneurs, chefs d'entreprises ou dirigeants",
+        "usage": "Ces services permettent à leur utilisateur d'améliorer ses ventes, et de se libérer des tâches répétitives."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "intro": "Chez DULU Sarl, nous nous engageons à protéger vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons les informations que vous nous fournissez lorsque vous utilisez nos services.",
+    "dataCollection": {
+      "title": "Données Collectées",
+      "description": "Nous collectons différents types de données personnelles, notamment :",
+      "types": {
+        "personal": "Informations personnelles : nom, prénom, adresse électronique, numéro de téléphone.",
+        "technical": "Données techniques : adresse IP, type de navigateur, données de connexion.",
+        "usage": "Données relatives à l'utilisation : pages consultées, interactions avec nos services."
+      }
+    },
+    "dataUsage": {
+      "title": "Utilisation des Données",
+      "description": "Vos données sont utilisées pour :",
+      "purposes": {
+        "service": "Fournir, améliorer et personnaliser nos services.",
+        "orders": "Traiter vos commandes et répondre à vos demandes.",
+        "communication": "Envoyer des communications commerciales (avec votre consentement).",
+        "security": "Garantir la sécurité de nos services."
+      }
+    }
   }
 }
