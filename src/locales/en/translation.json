@@ -158,5 +158,94 @@
         "content": "A professional team that truly understands the challenges of the African market."
       }
     }
+  },
+  "cgv": {
+    "title": "Terms and Conditions of Sale (TCS)",
+    "intro": "These Terms and Conditions of Sale (TCS) define the rights and obligations of DULU Sarl and its clients in the context of online sales of products or services via this website and associated platforms, including Facebook. Any order placed implies full and unconditional acceptance of these TCS.",
+    "legalInfo": {
+      "title": "1. Legal Information about the Company",
+      "companyName": "Company Name: DULU Sarl",
+      "address": "Full Address: Rue Mandessi Bell Bali-Douala",
+      "regNumber": "Registration Number: RC/DLA/2018/B/3820",
+      "email": "Contact Email: gaston.effa@gmail.com",
+      "phone": "Phone Number: +237 693 997 244",
+      "returnAddress": "Return Address: Rue Mandessi Bell Bali-Douala"
+    },
+    "products": {
+      "title": "2. Offered Products and Services",
+      "intro": "DULU Sarl offers:",
+      "description": "Products: A Meta ads service and other social media advertising services, as well as a client response automation service for entrepreneurs, business owners, or executives.",
+      "usage": "Intended Use: These services help users increase their sales and free themselves from repetitive tasks."
+    },
+    "ordering": {
+      "title": "3. Ordering and Purchase",
+      "process": {
+        "title": "Ordering Process",
+        "step1": "Select the desired products and add them to your cart.",
+        "step2": "Confirm your order by following the indicated steps.",
+        "step3": "You will receive a confirmation email once the order is validated."
+      },
+      "validation": {
+        "title": "Validation",
+        "intro": "An order is considered final after:",
+        "payment": "Payment confirmation.",
+        "email": "Receipt of an email confirming the order has been processed.",
+        "note": "Note: Orders placed through third-party platforms, such as Facebook or Instagram, are subject to the usage policies of those platforms in addition to these TCS."
+      }
+    },
+    "pricing": {
+      "title": "4. Pricing and Billing",
+      "prices": "Prices: Prices are displayed in Euros and include applicable taxes.",
+      "fees": "Additional Fees: Any delivery charges or specific taxes will be clearly indicated before confirming the order.",
+      "billing": "Billing: An invoice will be sent to the email address provided during the order process.",
+      "note": "Note: Prices are subject to change, but changes will not affect orders already confirmed."
+    },
+    "payment": {
+      "title": "5. Secure Payment",
+      "methods": {
+        "title": "Accepted Payment Methods",
+        "list": [
+          "Credit card (Visa, MasterCard, etc.)",
+          "PayPal",
+          "Other integrated payment platforms (depending on availability)."
+        ]
+      },
+      "security": {
+        "title": "Payment Security",
+        "description": "Transactions are secured through PayPal. No banking data is retained by DULU Sarl."
+      }
+    },
+    "delivery": {
+      "title": "6. Delivery and Associated Fees",
+      "timeframe": "Timeframe: The service is available immediately upon order confirmation.",
+      "regions": "Covered Regions: Africa, Europe, and North America.",
+      "fees": "Delivery Fees: None, as these are services."
+    },
+    "withdrawal": {
+      "title": "7. Right of Withdrawal and Returns",
+      "intro": "In compliance with applicable legislation:",
+      "period": "Withdrawal Period: You have 15 days from the start of service execution to exercise your right of withdrawal.",
+      "conditions": "Conditions: The service must not have been initiated by DULU Sarl.",
+      "procedure": "Procedure: Contact us at gaston.effa@gmail.com to formalize your withdrawal request."
+    },
+    "guarantees": {
+      "title": "8. Guarantees and Liability",
+      "conformity": "Conformity: Services conform to the description provided at the time of ordering.",
+      "liability": "Liability Limit: DULU Sarl cannot be held responsible for delays caused by external factors or improper use of its services."
+    },
+    "dataProtection": {
+      "title": "9. Data Protection and Cookies",
+      "personalData": "Personal Data: Your data is collected and used in accordance with our Privacy Policy for order processing.",
+      "cookies": "Cookies: The site uses cookies to optimize the user experience.",
+      "gdpr": "GDPR Compliance: You may request the modification or deletion of your data at any time via gaston.effa@gmail.com."
+    },
+    "disputes": {
+      "title": "10. Disputes and Competent Jurisdictions",
+      "description": "In case of a dispute, an amicable solution will be prioritized. If no agreement is reached, the dispute will be submitted to the competent courts of Douala, Cameroon."
+    },
+    "facebook": {
+      "title": "Specific Mentions for Facebook",
+      "description": "DULU Sarl complies with Facebook's commercial policies. Any interaction via Facebook Shop is also subject to the platform's rules. In case of conflict between these TCS and Facebook's rules, the latter will prevail for orders placed on the platform."
+    }
   }
 }
