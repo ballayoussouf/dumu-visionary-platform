@@ -1,0 +1,104 @@
+{
+  "title": "Conditions générales de ventes (CGV)",
+  "legalInfo": {
+    "title": "1. Informations légales sur l'entreprise",
+    "items": {
+      "companyName": "Nom de l'entreprise : DULU Sarl",
+      "address": "Adresse complète : Rue Mandessi Bell Bali-Douala",
+      "regNumber": "Numéro d'immatriculation : RC/DLA/2018/B/3820",
+      "email": "Email de contact : gaston.effa@gmail.com",
+      "phone": "Numéro de téléphone : 00237693997244",
+      "returnAddress": "Adresse de retour : Rue Mandessi Bell Bali-Douala"
+    }
+  },
+  "productsServices": {
+    "title": "2. Produits et services proposés",
+    "description": "DULU Sarl propose :",
+    "products": "Produits : Service de publicité Meta ads et autres réseaux sociaux, et service d'automatisation des réponses clients pour entrepreneurs, chefs d'entreprise ou managers",
+    "intendedUse": "Usage prévu : Ces services permettent aux utilisateurs d'améliorer leurs ventes et de se libérer des tâches répétitives."
+  },
+  "orderPurchase": {
+    "title": "3. Commande et achat",
+    "process": {
+      "title": "Processus de commande",
+      "steps": {
+        "step1": "Sélectionnez les produits souhaités et ajoutez-les au panier.",
+        "step2": "Confirmez votre commande en suivant les étapes indiquées.",
+        "step3": "Vous recevrez un email de confirmation une fois la commande validée."
+      }
+    },
+    "validation": {
+      "title": "Validation",
+      "description": "Une commande est considérée comme définitive après :",
+      "conditions": {
+        "payment": "Validation du paiement.",
+        "email": "Envoi d'un email confirmant la réception de votre commande."
+      }
+    },
+    "thirdParty": "Note : Les commandes passées via des plateformes tierces, comme Facebook ou Instagram, sont soumises aux politiques d'utilisation de ces plateformes en plus de ces CGV."
+  },
+  "pricing": {
+    "title": "4. Prix et facturation",
+    "items": {
+      "prices": "Prix : Les prix affichés sont en Euro et seront majorés des taxes applicables.",
+      "additionalFees": "Frais supplémentaires : Les frais de livraison ou taxes spécifiques seront clairement indiqués avant la validation de la commande.",
+      "invoice": "Facturation : Une facture sera envoyée à l'adresse email fournie lors de la commande."
+    },
+    "note": "Note : Les prix sont susceptibles d'être modifiés, mais les modifications n'affectent pas les commandes déjà confirmées."
+  },
+  "payment": {
+    "title": "5. Paiement sécurisé",
+    "methods": {
+      "title": "Moyens de paiement acceptés",
+      "items": {
+        "card": "Carte bancaire (Visa, MasterCard, etc.)",
+        "paypal": "PayPal",
+        "other": "Autres plateformes de paiement intégrées (selon disponibilité)."
+      }
+    },
+    "security": {
+      "title": "Sécurité des paiements",
+      "description": "Les transactions sont sécurisées via PayPal. Aucune donnée bancaire n'est conservée par DULU Sarl."
+    }
+  },
+  "delivery": {
+    "title": "6. Livraison et frais associés",
+    "items": {
+      "timing": "Délai : Le service est disponible immédiatement après confirmation de la commande.",
+      "coverage": "Zones couvertes : Afrique, Europe et Amérique du Nord.",
+      "fees": "Frais de livraison : Pas de frais de livraison car il s'agit de services."
+    }
+  },
+  "withdrawal": {
+    "title": "7. Droit de rétractation et retours",
+    "description": "Conformément à la législation en vigueur :",
+    "items": {
+      "period": "Délai de rétractation : Vous disposez de 15 jours à compter du début de l'exécution du service pour exercer votre droit de rétractation.",
+      "conditions": "Conditions : Le service ne doit pas avoir été commencé par DULU Sarl.",
+      "procedure": "Procédure : Contactez-nous à gaston.effa@gmail.com pour formaliser votre souhait de rétractation."
+    }
+  },
+  "warranty": {
+    "title": "8. Garanties et responsabilité",
+    "items": {
+      "conformity": "Conformité : Les services sont conformes à la description fournie lors de la commande.",
+      "liability": "Limite de responsabilité : DULU Sarl ne peut être tenu responsable des retards dus à des facteurs externes ou à une utilisation inappropriée de ses services."
+    }
+  },
+  "dataProtection": {
+    "title": "9. Protection des données et cookies",
+    "items": {
+      "personalData": "Données personnelles : Vos données sont collectées et utilisées conformément à notre Politique de confidentialité pour le traitement des commandes.",
+      "cookies": "Cookies : Le site utilise des cookies pour optimiser l'expérience utilisateur.",
+      "gdpr": "Conformité RGPD : Vous pouvez demander la modification ou la suppression de vos données à tout moment via gaston.effa@gmail.com"
+    }
+  },
+  "disputes": {
+    "title": "10. Litiges et juridictions compétentes",
+    "description": "En cas de litige, une solution amiable sera privilégiée. À défaut d'accord, le litige sera soumis aux tribunaux compétents de Douala au Cameroun."
+  },
+  "facebook": {
+    "title": "Mentions spécifiques Facebook",
+    "description": "DULU Sarl respecte les politiques commerciales de Facebook. Toute interaction via Facebook Shop est également soumise aux règles de la plateforme. En cas de conflit entre les CGV et les règles Facebook, ces dernières prévalent pour les commandes effectuées sur la plateforme."
+  }
+}

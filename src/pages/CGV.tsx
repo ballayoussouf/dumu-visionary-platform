@@ -10,89 +10,118 @@ const CGV = () => {
       <div className="container mx-auto px-4 py-8 prose prose-invert max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">{t('cgv.title')}</h1>
         
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.legalInfo.title')}</h2>
-        <ul>
-          <li>{t('cgv.legalInfo.items.companyName')}</li>
-          <li>{t('cgv.legalInfo.items.address')}</li>
-          <li>{t('cgv.legalInfo.items.regNumber')}</li>
-          <li>{t('cgv.legalInfo.items.email')}</li>
-          <li>{t('cgv.legalInfo.items.phone')}</li>
-          <li>{t('cgv.legalInfo.items.returnAddress')}</li>
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.legalInfo.title')}</h2>
+          <ul>
+            <li>{t('cgv.legalInfo.items.companyName')}</li>
+            <li>{t('cgv.legalInfo.items.address')}</li>
+            <li>{t('cgv.legalInfo.items.regNumber')}</li>
+            <li>{t('cgv.legalInfo.items.email')}</li>
+            <li>{t('cgv.legalInfo.items.phone')}</li>
+            <li>{t('cgv.legalInfo.items.returnAddress')}</li>
+          </ul>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.productsServices.title')}</h2>
-        <p>{t('cgv.productsServices.description')}</p>
-        <p>{t('cgv.productsServices.products')}</p>
-        <p>{t('cgv.productsServices.intendedUse')}</p>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.productsServices.title')}</h2>
+          <p>{t('cgv.productsServices.description')}</p>
+          <p>{t('cgv.productsServices.products')}</p>
+          <p>{t('cgv.productsServices.intendedUse')}</p>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.orderPurchase.title')}</h2>
-        <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.orderPurchase.process.title')}</h3>
-        <ol>
-          <li>{t('cgv.orderPurchase.process.steps.step1')}</li>
-          <li>{t('cgv.orderPurchase.process.steps.step2')}</li>
-          <li>{t('cgv.orderPurchase.process.steps.step3')}</li>
-        </ol>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.orderPurchase.title')}</h2>
+          <div>
+            <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.orderPurchase.process.title')}</h3>
+            <ol>
+              <li>{t('cgv.orderPurchase.process.steps.step1')}</li>
+              <li>{t('cgv.orderPurchase.process.steps.step2')}</li>
+              <li>{t('cgv.orderPurchase.process.steps.step3')}</li>
+            </ol>
+          </div>
 
-        <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.orderPurchase.validation.title')}</h3>
-        <p>{t('cgv.orderPurchase.validation.description')}</p>
-        <ul>
-          <li>{t('cgv.orderPurchase.validation.conditions.payment')}</li>
-          <li>{t('cgv.orderPurchase.validation.conditions.email')}</li>
-        </ul>
-        <p>{t('cgv.orderPurchase.thirdParty')}</p>
+          <div>
+            <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.orderPurchase.validation.title')}</h3>
+            <p>{t('cgv.orderPurchase.validation.description')}</p>
+            <ul>
+              <li>{t('cgv.orderPurchase.validation.conditions.payment')}</li>
+              <li>{t('cgv.orderPurchase.validation.conditions.email')}</li>
+            </ul>
+          </div>
+          <p>{t('cgv.orderPurchase.thirdParty')}</p>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.pricing.title')}</h2>
-        <ul>
-          <li>{t('cgv.pricing.items.prices')}</li>
-          <li>{t('cgv.pricing.items.additionalFees')}</li>
-          <li>{t('cgv.pricing.items.invoice')}</li>
-        </ul>
-        <p>{t('cgv.pricing.note')}</p>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.pricing.title')}</h2>
+          <ul>
+            <li>{t('cgv.pricing.items.prices')}</li>
+            <li>{t('cgv.pricing.items.additionalFees')}</li>
+            <li>{t('cgv.pricing.items.invoice')}</li>
+          </ul>
+          <p>{t('cgv.pricing.note')}</p>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.payment.title')}</h2>
-        <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.payment.methods.title')}</h3>
-        <ul>
-          <li>{t('cgv.payment.methods.items.card')}</li>
-          <li>{t('cgv.payment.methods.items.paypal')}</li>
-          <li>{t('cgv.payment.methods.items.other')}</li>
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.payment.title')}</h2>
+          <div>
+            <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.payment.methods.title')}</h3>
+            <ul>
+              <li>{t('cgv.payment.methods.items.card')}</li>
+              <li>{t('cgv.payment.methods.items.paypal')}</li>
+              <li>{t('cgv.payment.methods.items.other')}</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.payment.security.title')}</h3>
+            <p>{t('cgv.payment.security.description')}</p>
+          </div>
+        </section>
 
-        <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.payment.security.title')}</h3>
-        <p>{t('cgv.payment.security.description')}</p>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.delivery.title')}</h2>
+          <ul>
+            <li>{t('cgv.delivery.items.timing')}</li>
+            <li>{t('cgv.delivery.items.coverage')}</li>
+            <li>{t('cgv.delivery.items.fees')}</li>
+          </ul>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.delivery.title')}</h2>
-        <ul>
-          <li>{t('cgv.delivery.items.timing')}</li>
-          <li>{t('cgv.delivery.items.coverage')}</li>
-          <li>{t('cgv.delivery.items.fees')}</li>
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.withdrawal.title')}</h2>
+          <p>{t('cgv.withdrawal.description')}</p>
+          <ul>
+            <li>{t('cgv.withdrawal.items.period')}</li>
+            <li>{t('cgv.withdrawal.items.conditions')}</li>
+            <li>{t('cgv.withdrawal.items.procedure')}</li>
+          </ul>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.withdrawal.title')}</h2>
-        <p>{t('cgv.withdrawal.description')}</p>
-        <ul>
-          <li>{t('cgv.withdrawal.items.period')}</li>
-          <li>{t('cgv.withdrawal.items.conditions')}</li>
-          <li>{t('cgv.withdrawal.items.procedure')}</li>
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.warranty.title')}</h2>
+          <ul>
+            <li>{t('cgv.warranty.items.conformity')}</li>
+            <li>{t('cgv.warranty.items.liability')}</li>
+          </ul>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.warranty.title')}</h2>
-        <ul>
-          <li>{t('cgv.warranty.items.conformity')}</li>
-          <li>{t('cgv.warranty.items.liability')}</li>
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.dataProtection.title')}</h2>
+          <ul>
+            <li>{t('cgv.dataProtection.items.personalData')}</li>
+            <li>{t('cgv.dataProtection.items.cookies')}</li>
+            <li>{t('cgv.dataProtection.items.gdpr')}</li>
+          </ul>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.dataProtection.title')}</h2>
-        <ul>
-          <li>{t('cgv.dataProtection.items.personalData')}</li>
-          <li>{t('cgv.dataProtection.items.cookies')}</li>
-          <li>{t('cgv.dataProtection.items.gdpr')}</li>
-        </ul>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.disputes.title')}</h2>
+          <p>{t('cgv.disputes.description')}</p>
+        </section>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.disputes.title')}</h2>
-        <p>{t('cgv.disputes.description')}</p>
-
-        <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.facebook.title')}</h2>
-        <p>{t('cgv.facebook.description')}</p>
+        <section>
+          <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.facebook.title')}</h2>
+          <p>{t('cgv.facebook.description')}</p>
+        </section>
       </div>
     </div>
   );

@@ -3,14 +3,19 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import translationEN from './locales/en/translation.json';
-import translationFR from './locales/fr/translation.json';
+import cgvFR from './locales/fr/cgv.json';
+import privacyFR from './locales/fr/privacy.json';
 
 const resources = {
   en: {
     translation: translationEN
   },
   fr: {
-    translation: translationFR
+    translation: {
+      ...translationEN,
+      cgv: cgvFR,
+      privacy: privacyFR
+    }
   }
 };
 
