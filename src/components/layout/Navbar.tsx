@@ -3,10 +3,12 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitch from "../ui/LanguageSwitch";
 import { useLocation, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
   
   const getSectionLink = (section: string) => {
     return location.pathname === "/" ? `#${section}` : `/#${section}`;
@@ -28,24 +30,24 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
-              Accueil
+              {t("nav.home")}
             </Link>
             <Link to="/fastcom-pro" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
-              FastCom Pro
+              {t("nav.fastcomPro")}
             </Link>
             <a href={getSectionLink("services")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
-              Services
+              {t("nav.services")}
             </a>
             <a href={getSectionLink("about")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
-              À propos
+              {t("nav.about")}
             </a>
             <a href={getSectionLink("contact")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
-              Contact
+              {t("nav.contact")}
             </a>
             <LanguageSwitch />
             <a href={getSectionLink("contact")} className="inline-block">
               <Button className="bg-[#9b87f5] hover:bg-[#9b87f5]/90">
-                Commencer
+                {t("nav.getStarted")}
               </Button>
             </a>
           </div>
@@ -68,35 +70,35 @@ const Navbar = () => {
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Accueil
+                {t("nav.home")}
               </Link>
               <Link
                 to="/fastcom-pro"
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                FastCom Pro
+                {t("nav.fastcomPro")}
               </Link>
               <a
                 href={getSectionLink("services")}
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                {t("nav.services")}
               </a>
               <a
                 href={getSectionLink("about")}
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                À propos
+                {t("nav.about")}
               </a>
               <a
                 href={getSectionLink("contact")}
                 className="text-gray-600 hover:text-[#9b87f5] transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                {t("nav.contact")}
               </a>
               <LanguageSwitch />
               <a 
@@ -105,7 +107,7 @@ const Navbar = () => {
                 className="w-full"
               >
                 <Button className="bg-[#9b87f5] hover:bg-[#9b87f5]/90 w-full">
-                  Commencer
+                  {t("nav.getStarted")}
                 </Button>
               </a>
             </div>

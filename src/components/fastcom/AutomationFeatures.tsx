@@ -1,29 +1,32 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bot, MessageSquare, Zap } from "lucide-react";
 import { motion } from "framer-motion";
-
-const autoFeatures = [
-  {
-    icon: Bot,
-    title: "Réponses Automatisées",
-    description: "Système intelligent qui répond instantanément aux messages de vos clients 24h/24 et 7j/7."
-  },
-  {
-    icon: MessageSquare,
-    title: "Messages Personnalisés",
-    description: "Réponses adaptées selon le type de demande et le profil du client."
-  },
-  {
-    icon: Zap,
-    title: "Traitement Rapide",
-    description: "Gestion efficace des demandes clients avec des réponses instantanées et pertinentes."
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const AutomationFeatures = () => {
+  const { t } = useTranslation();
+
+  const autoFeatures = [
+    {
+      icon: Bot,
+      title: t("fastcomPro.automation.features.autoResponses"),
+      description: "Système intelligent qui répond instantanément aux messages de vos clients 24h/24 et 7j/7."
+    },
+    {
+      icon: MessageSquare,
+      title: t("fastcomPro.automation.features.customMessages"),
+      description: "Réponses adaptées selon le type de demande et le profil du client."
+    },
+    {
+      icon: Zap,
+      title: t("fastcomPro.automation.features.fastProcessing"),
+      description: "Gestion efficace des demandes clients avec des réponses instantanées et pertinentes."
+    }
+  ];
+
   return (
     <div className="space-y-8">
-      <h2 className="text-3xl font-bold text-center">Automatisation des Réponses</h2>
+      <h2 className="text-3xl font-bold text-center">{t("fastcomPro.automation.title")}</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {autoFeatures.map((feature, index) => (
           <motion.div

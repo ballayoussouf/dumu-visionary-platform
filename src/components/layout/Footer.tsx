@@ -1,8 +1,10 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const location = useLocation();
+  const { t } = useTranslation();
   
   const getSectionLink = (section: string) => {
     return location.pathname === "/" ? `#${section}` : `/#${section}`;
@@ -16,14 +18,14 @@ const Footer = () => {
           <div>
             <h3 className="font-heading text-2xl font-bold text-dulu-orange mb-4">DULU Sarl</h3>
             <p className="text-gray-400">
-              Solutions numériques innovantes pour votre entreprise
+              {t("hero.subtitle")}
             </p>
             <p className="text-gray-400 mt-2">RC/DLA/2018/B/3820</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading text-lg font-semibold mb-4">Liens rapides</h4>
+            <h4 className="font-heading text-lg font-semibold mb-4">{t("footer.quickLinks")}</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/fastcom-pro" className="text-gray-400 hover:text-dulu-orange transition-colors">
@@ -32,27 +34,27 @@ const Footer = () => {
               </li>
               <li>
                 <a href={getSectionLink("services")} className="text-gray-400 hover:text-dulu-orange transition-colors">
-                  Services
+                  {t("nav.services")}
                 </a>
               </li>
               <li>
                 <a href={getSectionLink("about")} className="text-gray-400 hover:text-dulu-orange transition-colors">
-                  À propos
+                  {t("nav.about")}
                 </a>
               </li>
               <li>
                 <a href={getSectionLink("contact")} className="text-gray-400 hover:text-dulu-orange transition-colors">
-                  Contact
+                  {t("nav.contact")}
                 </a>
               </li>
               <li>
                 <Link to="/cgv" className="text-gray-400 hover:text-dulu-orange transition-colors">
-                  Conditions générales de ventes (CGV)
+                  {t("footer.termsOfService")}
                 </Link>
               </li>
               <li>
                 <Link to="/privacy" className="text-gray-400 hover:text-dulu-orange transition-colors">
-                  Politique de confidentialité
+                  {t("footer.privacyPolicy")}
                 </Link>
               </li>
             </ul>
@@ -60,11 +62,11 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="font-heading text-lg font-semibold mb-4">{t("footer.contact")}</h4>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-gray-400">
                 <MapPin size={16} />
-                <span>Rue Mandessi Bell Bali-Douala</span>
+                <span>{t("footer.address")}</span>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Phone size={16} />
@@ -79,7 +81,7 @@ const Footer = () => {
 
           {/* Social */}
           <div>
-            <h4 className="font-heading text-lg font-semibold mb-4">Suivez-nous</h4>
+            <h4 className="font-heading text-lg font-semibold mb-4">{t("footer.followUs")}</h4>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -107,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} DULU Sarl. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} DULU Sarl. {t("footer.rights")}</p>
         </div>
       </div>
     </footer>

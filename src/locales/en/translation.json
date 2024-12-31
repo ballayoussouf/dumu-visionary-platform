@@ -4,7 +4,8 @@
     "services": "Services",
     "about": "About",
     "contact": "Contact",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "fastcomPro": "FastCom Pro"
   },
   "hero": {
     "title": "Innovative Digital Solutions for Your Business",
@@ -37,6 +38,35 @@
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "followUs": "Follow Us",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "address": "Mandessi Bell Street, Bali-Douala",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service (ToS)"
+  },
+  "fastcomPro": {
+    "title": "FastCom Pro",
+    "subtitle": "Transform your advertising presence with our Media Buying expertise and customer response automation. A comprehensive approach that maximizes your conversions.",
+    "contactUs": "Contact Us Now",
+    "mediaBuying": {
+      "title": "Media Buying Services",
+      "features": {
+        "messageDesign": "Advertising Message Design",
+        "titleDesign": "Advertising Title Design",
+        "imageDesign": "Advertising Image Design",
+        "targeting": "Advertising Targeting",
+        "campaign": "Facebook Campaign Launch",
+        "budget": "Budget Optimization",
+        "report": "Detailed Campaign Report",
+        "phoneAdvice": "Phone Conversion Tips (Free)"
+      }
+    },
+    "automation": {
+      "title": "Response Automation",
+      "features": {
+        "autoResponses": "Automated Responses",
+        "customMessages": "Custom Messages",
+        "fastProcessing": "Fast Processing"
+      }
+    }
   }
 }
