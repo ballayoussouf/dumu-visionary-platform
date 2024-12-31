@@ -9,60 +9,19 @@
   },
   "hero": {
     "title": "Innovative Digital Solutions for Your Business",
-    "subtitle": "Transform your digital presence with our tailored solutions",
-    "banner": "🚀 Digital solutions for your business",
-    "description": "Media Buying experts and customer response automation. Propel your business into the future with Flow by Dulu.",
-    "discover": "Discover our services",
-    "contactUs": "Contact us",
-    "stats": {
-      "clients": "Happy Clients",
-      "satisfaction": "Satisfaction Rate",
-      "support": "Customer Support"
-    }
+    "subtitle": "Transform your digital presence with our tailored solutions"
   },
   "about": {
     "title": "African Innovation,",
     "highlight": "Global Impact",
     "description1": "DULU Sarl was born from the vision of transforming the African digital landscape. Based in Douala, our company combines technical expertise with a deep understanding of local needs to deliver innovative digital solutions.",
     "description2": "Our mission is to propel African businesses into the digital future by providing cutting-edge tools and services tailored to their specific needs.",
-    "ourStory": "Our Story",
     "stats": {
       "experience": "Years of Experience",
       "clients": "Happy Clients",
       "projects": "Successful Projects",
       "support": "Customer Support"
     }
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Tailored solutions to optimize your digital presence and automate customer interactions",
-    "mediaBuying": {
-      "title": "Media Buying Expert",
-      "subtitle": "Optimize your advertising campaigns and maximize your ROI",
-      "features": {
-        "messages": "Impactful advertising message design",
-        "titles": "Catchy titles and visuals creation",
-        "reports": "Continuous optimization and detailed reports",
-        "tips": "Phone conversion tips offered"
-      }
-    },
-    "automation": {
-      "title": "Response Automation",
-      "subtitle": "Efficiently manage your customer communications",
-      "features": {
-        "responses": "Intelligent automated responses",
-        "integration": "Multi-channel integration",
-        "personalization": "Message personalization",
-        "analytics": "Interaction tracking and analysis",
-        "humanization": "Message humanization"
-      }
-    },
-    "discoverMore": "Discover the complete offer"
-  },
-  "testimonials": {
-    "title": "They trust us",
-    "subtitle": "Discover what our clients say about us and why they continue to trust us with their digital projects",
-    "partners": "Our Partners"
   },
   "contact": {
     "title": "Contact Us",
@@ -83,5 +42,31 @@
     "address": "Mandessi Bell Street, Bali-Douala",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service (ToS)"
+  },
+  "fastcomPro": {
+    "title": "FastCom Pro",
+    "subtitle": "Transform your advertising presence with our Media Buying expertise and customer response automation. A comprehensive approach that maximizes your conversions.",
+    "contactUs": "Contact Us Now",
+    "mediaBuying": {
+      "title": "Media Buying Services",
+      "features": {
+        "messageDesign": "Advertising Message Design",
+        "titleDesign": "Advertising Title Design",
+        "imageDesign": "Advertising Image Design",
+        "targeting": "Advertising Targeting",
+        "campaign": "Facebook Campaign Launch",
+        "budget": "Budget Optimization",
+        "report": "Detailed Campaign Report",
+        "phoneAdvice": "Phone Conversion Tips (Free)"
+      }
+    },
+    "automation": {
+      "title": "Response Automation",
+      "features": {
+        "autoResponses": "Automated Responses",
+        "customMessages": "Custom Messages",
+        "fastProcessing": "Fast Processing"
+      }
+    }
   }
 }
