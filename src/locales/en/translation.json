@@ -158,5 +158,171 @@
         "content": "A professional team that truly understands the challenges of the African market."
       }
     }
+  },
+  "cgv": {
+    "title": "Terms of Service (ToS)",
+    "legalInfo": {
+      "title": "1. Legal Information About the Company",
+      "items": {
+        "companyName": "Company Name: DULU Sarl",
+        "address": "Full Address: Mandessi Bell Street Bali-Douala",
+        "regNumber": "Registration Number: RC/DLA/2018/B/3820",
+        "email": "Contact Email: gaston.effa@gmail.com",
+        "phone": "Phone Number: 00237693997244",
+        "returnAddress": "Return Address: Mandessi Bell Street Bali-Douala"
+      }
+    },
+    "productsServices": {
+      "title": "2. Products and Services Offered",
+      "description": "DULU Sarl offers:",
+      "products": "Products: Meta ads advertising service and other social networks, and customer response automation service for entrepreneurs, business owners or managers",
+      "intendedUse": "Intended Use: These services allow users to improve their sales and free themselves from repetitive tasks."
+    },
+    "orderPurchase": {
+      "title": "3. Order and Purchase",
+      "process": {
+        "title": "Order Process",
+        "steps": {
+          "step1": "Select desired products and add them to cart.",
+          "step2": "Confirm your order by following the indicated steps.",
+          "step3": "You will receive a confirmation email once the order is validated."
+        }
+      },
+      "validation": {
+        "title": "Validation",
+        "description": "An order is considered final after:",
+        "conditions": {
+          "payment": "Payment validation.",
+          "email": "Sending an email confirming receipt of your order."
+        }
+      },
+      "thirdParty": "Note: Orders placed through third-party platforms, such as Facebook or Instagram, are subject to these platforms' usage policies in addition to these Terms of Service."
+    },
+    "pricing": {
+      "title": "4. Pricing and Billing",
+      "items": {
+        "prices": "Prices: Displayed prices are in Euro and will be added to applicable taxes.",
+        "additionalFees": "Additional Fees: Delivery fees or specific taxes will be clearly indicated before order validation.",
+        "invoice": "Billing: An invoice will be sent to the email address provided during ordering."
+      },
+      "note": "Note: Prices are subject to change, but changes do not affect already confirmed orders."
+    },
+    "payment": {
+      "title": "5. Secure Payment",
+      "methods": {
+        "title": "Accepted Payment Methods",
+        "items": {
+          "card": "Credit Card (Visa, MasterCard, etc.)",
+          "paypal": "PayPal",
+          "other": "Other integrated payment platforms (subject to availability)."
+        }
+      },
+      "security": {
+        "title": "Payment Security",
+        "description": "Transactions are secured via PayPal. No banking data is stored by DULU Sarl."
+      }
+    },
+    "delivery": {
+      "title": "6. Delivery and Associated Fees",
+      "items": {
+        "timing": "Timing: Service is available immediately upon order confirmation.",
+        "coverage": "Covered Areas: Africa, Europe, and North America.",
+        "fees": "Delivery Fees: No delivery fees as these are services."
+      }
+    },
+    "withdrawal": {
+      "title": "7. Right of Withdrawal and Returns",
+      "description": "In accordance with current legislation:",
+      "items": {
+        "period": "Withdrawal Period: You have 15 days from the start of service execution to exercise your right of withdrawal.",
+        "conditions": "Conditions: The service must not have been started by DULU Sarl.",
+        "procedure": "Procedure: Contact us at gaston.effa@gmail.com to formalize your desire to withdraw."
+      }
+    },
+    "warranty": {
+      "title": "8. Warranties and Liability",
+      "items": {
+        "conformity": "Conformity: Services conform to the description provided at the time of ordering.",
+        "liability": "Liability Limit: DULU Sarl cannot be held responsible for delays due to external factors or inappropriate use of its services."
+      }
+    },
+    "dataProtection": {
+      "title": "9. Data Protection and Cookies",
+      "items": {
+        "personalData": "Personal Data: Your data is collected and used in accordance with our Privacy Policy for order processing.",
+        "cookies": "Cookies: The site uses cookies to optimize user experience.",
+        "gdpr": "GDPR Compliance: You can request modification or deletion of your data at any time via gaston.effa@gmail.com"
+      }
+    },
+    "disputes": {
+      "title": "10. Disputes and Competent Jurisdictions",
+      "description": "In case of dispute, an amicable solution will be preferred. If no agreement is reached, the dispute will be submitted to the competent courts of Douala in Cameroon."
+    },
+    "facebook": {
+      "title": "Specific Facebook Mentions",
+      "description": "DULU Sarl respects Facebook's commercial policies. Any interaction via Facebook Shop is also subject to the platform's rules. In case of conflict between the ToS and Facebook rules, the latter prevail for orders made on the platform."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "At DULU Sarl, we are committed to protecting your personal data. This privacy policy explains how we collect, use, share, and protect the information you provide when using our services.",
+    "dataCollection": {
+      "title": "1. Data Collected",
+      "description": "We collect different types of personal data, including:",
+      "items": {
+        "personal": "Personal Information: name, first name, email address, phone number.",
+        "technical": "Technical Data: IP address, browser type, connection data.",
+        "usage": "Usage Data: pages viewed, interactions with our services."
+      }
+    },
+    "dataUse": {
+      "title": "2. Data Use",
+      "description": "Your data is used to:",
+      "items": {
+        "service": "Provide, improve, and personalize our services.",
+        "orders": "Process your orders and respond to your requests.",
+        "marketing": "Send commercial communications (with your consent).",
+        "security": "Ensure the security of our services."
+      }
+    },
+    "dataSharing": {
+      "title": "3. Data Sharing",
+      "description": "We share your data only in the following cases:",
+      "items": {
+        "providers": "With third-party service providers (payments, delivery, technical support) as part of service execution.",
+        "legal": "In accordance with the law, to comply with legal obligations or requests from competent authorities."
+      }
+    },
+    "storage": {
+      "title": "4. Data Storage and Security",
+      "description": "Your data is stored on secure servers. We implement technical and organizational measures to prevent unauthorized access, loss, or disclosure of your data."
+    },
+    "retention": {
+      "title": "5. Retention Period",
+      "description": "Your personal data is retained as long as necessary to achieve the purposes described in this policy or to meet our legal obligations."
+    },
+    "rights": {
+      "title": "6. Your Rights",
+      "description": "You have the following rights:",
+      "items": {
+        "access": "Access to your personal data.",
+        "rectification": "Rectification or deletion of your data.",
+        "opposition": "Opposition to the processing of your data.",
+        "withdrawal": "Withdrawal of your consent for commercial communications."
+      }
+    },
+    "cookies": {
+      "title": "7. Cookies",
+      "description": "We use cookies to improve your user experience. You can configure your browser to refuse cookies."
+    },
+    "changes": {
+      "title": "8. Changes to the Privacy Policy",
+      "description": "We reserve the right to modify this policy at any time. Any changes will be published on our website."
+    },
+    "contact": {
+      "description": "To exercise your rights, please contact us at: gaston.effa@gmail.com"
+    },
+    "lastUpdate": "Last updated: December 28, 2024",
+    "thanks": "If you have any questions, don't hesitate to contact us. Thank you for your trust!"
   }
 }
