@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,21 +9,25 @@ import {
 import { Globe } from "lucide-react";
 
 const LanguageSwitch = () => {
-  const [currentLang, setCurrentLang] = useState("FR");
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
           <Globe className="h-4 w-4" />
-          <span className="ml-2">{currentLang}</span>
+          <span className="ml-2">{i18n.language.toUpperCase()}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setCurrentLang("FR")}>
+        <DropdownMenuItem onClick={() => changeLanguage('fr')}>
           Français
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setCurrentLang("EN")}>
+        <DropdownMenuItem onClick={() => changeLanguage('en')}>
           English
         </DropdownMenuItem>
       </DropdownMenuContent>

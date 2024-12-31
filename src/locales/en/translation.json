@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Innovative Digital Solutions for Your Business",
+    "subtitle": "Transform your digital presence with our tailored solutions"
+  },
+  "about": {
+    "title": "African Innovation,",
+    "highlight": "Global Impact",
+    "description1": "DULU Sarl was born from the vision of transforming the African digital landscape. Based in Douala, our company combines technical expertise with a deep understanding of local needs to deliver innovative digital solutions.",
+    "description2": "Our mission is to propel African businesses into the digital future by providing cutting-edge tools and services tailored to their specific needs.",
+    "stats": {
+      "experience": "Years of Experience",
+      "clients": "Happy Clients",
+      "projects": "Successful Projects",
+      "support": "Customer Support"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your digital presence? Contact us today.",
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved"
+  }
+}
