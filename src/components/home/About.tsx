@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+  
   const statsVariants = {
     hidden: { scale: 0.8, opacity: 0 },
     visible: { scale: 1, opacity: 1 }
@@ -17,21 +20,17 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Innovation africaine, <br />
-              <span className="text-dulu-orange">impact mondial</span>
+              {t("about.title")} <br />
+              <span className="text-dulu-orange">{t("about.highlight")}</span>
             </h2>
             <p className="text-gray-600 mb-6">
-              DULU Sarl est née de la vision de transformer le paysage numérique africain. 
-              Basée à Douala, notre entreprise combine expertise technique et compréhension 
-              profonde des besoins locaux pour offrir des solutions numériques innovantes.
+              {t("about.description1")}
             </p>
             <p className="text-gray-600 mb-8">
-              Notre mission est de propulser les entreprises africaines vers le futur 
-              numérique en leur fournissant des outils et services de pointe, adaptés 
-              à leurs besoins spécifiques.
+              {t("about.description2")}
             </p>
             <Button className="bg-dulu-orange hover:bg-dulu-orange/90">
-              Notre histoire
+              {t("about.ourStory")}
             </Button>
           </motion.div>
           <motion.div
@@ -53,10 +52,10 @@ const About = () => {
             <div className="relative bg-white p-8 rounded-3xl shadow-xl">
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "3+", label: "Années d'expérience", color: "text-dulu-orange" },
-                  { value: "20+", label: "Clients satisfaits", color: "text-dulu-blue" },
-                  { value: "50+", label: "Projets réussis", color: "text-dulu-orange" },
-                  { value: "24/7", label: "Support client", color: "text-dulu-blue" }
+                  { value: "3+", label: "about.stats.experience", color: "text-dulu-orange" },
+                  { value: "20+", label: "about.stats.clients", color: "text-dulu-blue" },
+                  { value: "50+", label: "about.stats.projects", color: "text-dulu-orange" },
+                  { value: "24/7", label: "about.stats.support", color: "text-dulu-blue" }
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -67,7 +66,7 @@ const About = () => {
                     className="text-center p-4"
                   >
                     <h3 className={`text-4xl font-bold ${stat.color} mb-2`}>{stat.value}</h3>
-                    <p className="text-gray-600">{stat.label}</p>
+                    <p className="text-gray-600">{t(stat.label)}</p>
                   </motion.div>
                 ))}
               </div>

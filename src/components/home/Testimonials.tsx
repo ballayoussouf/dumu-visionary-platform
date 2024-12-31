@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   Carousel,
   CarouselContent,
@@ -58,6 +59,8 @@ const partners = [
 ];
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+  
   const plugin = useRef(
     Autoplay({ 
       delay: 2000, 
@@ -92,10 +95,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ils nous font confiance
+            {t("testimonials.title")}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Découvrez ce que nos clients disent de nous et pourquoi ils continuent de nous faire confiance pour leurs projets digitaux.
+            {t("testimonials.subtitle")}
           </p>
         </motion.div>
 
@@ -133,7 +136,7 @@ const Testimonials = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-center"
         >
-          <h3 className="text-2xl font-semibold mb-8">Nos Partenaires</h3>
+          <h3 className="text-2xl font-semibold mb-8">{t("testimonials.partners")}</h3>
           <Carousel
             opts={{
               align: "start",
