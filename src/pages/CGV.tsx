@@ -4,6 +4,17 @@ import BackButton from "@/components/ui/back-button";
 const CGV = () => {
   const { t } = useTranslation();
 
+  // Safely get payment methods list with a fallback
+  const getPaymentMethods = () => {
+    try {
+      const methods = t('cgv.payment.methods.list', { returnObjects: true });
+      return Array.isArray(methods) ? methods : [];
+    } catch (error) {
+      console.error('Error getting payment methods:', error);
+      return [];
+    }
+  };
+
   return (
     <div className="relative">
       <BackButton />
@@ -54,7 +65,7 @@ const CGV = () => {
         <h2 className="text-2xl font-bold mt-8 mb-4">{t('cgv.payment.title')}</h2>
         <h3 className="text-xl font-bold mt-4 mb-2">{t('cgv.payment.methods.title')}</h3>
         <ul>
-          {(t('cgv.payment.methods.list', { returnObjects: true }) as string[]).map((method, index) => (
+          {getPaymentMethods().map((method, index) => (
             <li key={index}>{method}</li>
           ))}
         </ul>
