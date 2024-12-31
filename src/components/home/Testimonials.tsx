@@ -8,56 +8,59 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-
-const testimonials = [
-  {
-    name: "Jean Dupont",
-    role: "CEO, TechCam",
-    content: "DULU a transformé notre approche du marketing digital. Leur expertise en Media Buying est incomparable.",
-    rating: 5
-  },
-  {
-    name: "Marie Kouam",
-    role: "Directrice Marketing, InnovCorp",
-    content: "L'automatisation mise en place par DULU nous a permis d'améliorer notre réactivité client de 300%.",
-    rating: 5
-  },
-  {
-    name: "Paul Biya",
-    role: "Fondateur, StartupAfrica",
-    content: "Une équipe professionnelle qui comprend vraiment les enjeux du marché africain.",
-    rating: 5
-  }
-];
-
-const partners = [
-  {
-    name: "TechCam",
-    logo: "/lovable-uploads/271a2b32-44f0-45f1-a906-11dda9b39fa8.png"
-  },
-  {
-    name: "InnovCorp",
-    logo: "/lovable-uploads/409f827e-a8f3-44f0-bc43-76da555be71c.png"
-  },
-  {
-    name: "StartupAfrica",
-    logo: "/lovable-uploads/909b9624-9087-456e-af62-43a0449a899a.png"
-  },
-  {
-    name: "DigitalCMR",
-    logo: "/lovable-uploads/b2bb0fd6-226c-49ca-b58c-00dea7a7a57f.png"
-  },
-  {
-    name: "AfricaTech",
-    logo: "/lovable-uploads/b6cbd019-d4c0-4ce9-85a0-8d105d30205c.png"
-  },
-  {
-    name: "CamerTech",
-    logo: "/lovable-uploads/a93ce0b1-39ea-4ca8-b352-9c3075175a91.png"
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+  
+  const testimonials = [
+    {
+      name: t("testimonials.clients.client1.name"),
+      role: t("testimonials.clients.client1.role"),
+      content: t("testimonials.clients.client1.content"),
+      rating: 5
+    },
+    {
+      name: t("testimonials.clients.client2.name"),
+      role: t("testimonials.clients.client2.role"),
+      content: t("testimonials.clients.client2.content"),
+      rating: 5
+    },
+    {
+      name: t("testimonials.clients.client3.name"),
+      role: t("testimonials.clients.client3.role"),
+      content: t("testimonials.clients.client3.content"),
+      rating: 5
+    }
+  ];
+
+  const partners = [
+    {
+      name: "TechCam",
+      logo: "/lovable-uploads/271a2b32-44f0-45f1-a906-11dda9b39fa8.png"
+    },
+    {
+      name: "InnovCorp",
+      logo: "/lovable-uploads/409f827e-a8f3-44f0-bc43-76da555be71c.png"
+    },
+    {
+      name: "StartupAfrica",
+      logo: "/lovable-uploads/909b9624-9087-456e-af62-43a0449a899a.png"
+    },
+    {
+      name: "DigitalCMR",
+      logo: "/lovable-uploads/b2bb0fd6-226c-49ca-b58c-00dea7a7a57f.png"
+    },
+    {
+      name: "AfricaTech",
+      logo: "/lovable-uploads/b6cbd019-d4c0-4ce9-85a0-8d105d30205c.png"
+    },
+    {
+      name: "CamerTech",
+      logo: "/lovable-uploads/a93ce0b1-39ea-4ca8-b352-9c3075175a91.png"
+    }
+  ];
+
   const plugin = useRef(
     Autoplay({ 
       delay: 2000, 
@@ -84,7 +87,6 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -92,14 +94,13 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ils nous font confiance
+            {t("testimonials.title")}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Découvrez ce que nos clients disent de nous et pourquoi ils continuent de nous faire confiance pour leurs projets digitaux.
+            {t("testimonials.subtitle")}
           </p>
         </motion.div>
 
-        {/* Testimonials Grid */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -126,14 +127,13 @@ const Testimonials = () => {
           ))}
         </motion.div>
 
-        {/* Partners Section with Carousel */}
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-center"
         >
-          <h3 className="text-2xl font-semibold mb-8">Nos Partenaires</h3>
+          <h3 className="text-2xl font-semibold mb-8">{t("testimonials.partners")}</h3>
           <Carousel
             opts={{
               align: "start",

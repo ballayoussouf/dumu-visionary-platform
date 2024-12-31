@@ -136,5 +136,27 @@
       "description": "Discover how our Media Buying expertise and automation can make your offer irresistible and maximize your conversions.",
       "button": "Call Us Now"
     }
+  },
+  "testimonials": {
+    "title": "They Trust Us",
+    "subtitle": "Discover what our clients say about us and why they continue to trust us with their digital projects.",
+    "partners": "Our Partners",
+    "clients": {
+      "client1": {
+        "name": "Jean Dupont",
+        "role": "CEO, TechCam",
+        "content": "DULU has transformed our approach to digital marketing. Their Media Buying expertise is unmatched."
+      },
+      "client2": {
+        "name": "Marie Kouam",
+        "role": "Marketing Director, InnovCorp",
+        "content": "The automation implemented by DULU has improved our customer responsiveness by 300%."
+      },
+      "client3": {
+        "name": "Paul Biya",
+        "role": "Founder, StartupAfrica",
+        "content": "A professional team that truly understands the challenges of the African market."
+      }
+    }
   }
 }
