@@ -27,10 +27,20 @@ const Hero = () => {
         />
       </div>
 
-      {/* Main content container with proper spacing */}
-      <div className="container mx-auto px-4 relative grid lg:grid-cols-2 gap-8 items-center">
-        {/* Text content */}
-        <div className="z-10">
+      {/* Main image */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block">
+        <motion.img 
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 0.9 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          src="/lovable-uploads/d221e0db-4859-4aa4-aa74-2646794e530b.png"
+          alt="Digital Solutions"
+          className="rounded-l-3xl w-[500px] h-[400px] object-cover shadow-2xl"
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-3xl">
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -46,7 +56,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6"
           >
             {t("hero.title")}{" "}
             <span className="text-dulu-orange relative">
@@ -63,7 +73,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-lg lg:text-xl text-gray-600 mb-8"
+            className="text-xl text-gray-600 mb-8"
           >
             {t("hero.description")}
           </motion.p>
@@ -108,20 +118,6 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Image section */}
-        <motion.div 
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.9 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="hidden lg:block"
-        >
-          <img
-            src="/lovable-uploads/d221e0db-4859-4aa4-aa74-2646794e530b.png"
-            alt="Digital Solutions"
-            className="rounded-l-3xl w-full h-auto max-w-[500px] ml-auto object-cover shadow-2xl"
-          />
-        </motion.div>
       </div>
     </div>
   );
