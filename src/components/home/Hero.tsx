@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
 
       {/* Main image */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block z-10">
         <motion.img 
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 0.9 }}
@@ -39,7 +39,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-4 relative z-20">
         <div className="max-w-3xl">
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
