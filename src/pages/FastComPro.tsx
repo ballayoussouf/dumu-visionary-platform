@@ -25,7 +25,7 @@ const FastComPro = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">{t("fastcomPro.title")}</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t("fastcomPro.subtitle")}
+              {t("hero.description")}
             </p>
             <Button 
               size="lg"
