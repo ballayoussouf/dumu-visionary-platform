@@ -207,7 +207,7 @@
         "list": [
           "Credit card (Visa, MasterCard, etc.)",
           "PayPal",
-          "Other integrated payment platforms (depending on availability)."
+          "Other integrated payment platforms (depending on availability)"
         ]
       },
       "security": {
