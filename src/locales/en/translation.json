@@ -165,12 +165,15 @@
       "description": "Continuous monitoring and performance improvement"
     }
   },
+  
   "pricing": {
     "title": "Our Offers",
-    "subtitle": "Tailored solutions to optimize your Meta advertising campaigns",
+    "subtitle": "Professional solutions to optimize your Meta (Facebook and Instagram) advertising campaigns",
     "standardPlan": {
       "title": "Standard Plan",
-      "description": "Complete management of your advertising campaigns",
+      "price": "99,000 FCFA",
+      "priceEuro": "≈ €150/month",
+      "description": "Complete management of your Meta advertising campaigns",
       "features": [
         "Complete campaign management",
         "Creation of advertising visuals",
@@ -179,12 +182,14 @@
         "Lead conversion advice",
         "Free audit of existing campaigns"
       ],
-      "cta": "Get Started"
+      "cta": "Book a Free Call"
     },
     "proPlan": {
       "badge": "Recommended",
       "title": "FastCom Pro",
-      "description": "Everything in Standard plus advanced features",
+      "price": "138,000 FCFA",
+      "priceEuro": "≈ €209/month",
+      "description": "Everything in Standard plan plus advanced features",
       "features": [
         "Everything in Standard plan",
         "Advanced campaign optimization",
@@ -200,8 +205,8 @@
       "subtitle": "Our expertise at the service of your growth",
       "items": [
         {
-          "title": "Proven Expertise",
-          "description": "A team of digital marketing experts with proven results"
+          "title": "Proven Meta Expertise",
+          "description": "A team of Facebook and Instagram advertising experts with proven results"
         },
         {
           "title": "Optimized ROI",

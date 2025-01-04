@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Facebook, Instagram, Target, ChartBarIcon, Users, HeadphonesIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
@@ -16,9 +16,9 @@ const Pricing = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="pt-20">
+      <div className="flex-grow">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4">
@@ -28,6 +28,10 @@ const Pricing = () => {
               animate="animate"
               variants={fadeInUp}
             >
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Facebook className="text-dulu-orange" size={24} />
+                <Instagram className="text-dulu-orange" size={24} />
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 {t("pricing.title")}
               </h1>
@@ -49,9 +53,8 @@ const Pricing = () => {
                     <CardTitle>{t("pricing.standardPlan.title")}</CardTitle>
                     <CardDescription>{t("pricing.standardPlan.description")}</CardDescription>
                     <div className="mt-4">
-                      <span className="text-4xl font-bold">99 000</span>
-                      <span className="text-gray-600 ml-2">FCFA/mois</span>
-                      <div className="text-sm text-gray-500">≈ 150€/mois</div>
+                      <span className="text-4xl font-bold">{t("pricing.standardPlan.price")}</span>
+                      <div className="text-sm text-gray-500">{t("pricing.standardPlan.priceEuro")}</div>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -88,9 +91,8 @@ const Pricing = () => {
                     <CardTitle>{t("pricing.proPlan.title")}</CardTitle>
                     <CardDescription>{t("pricing.proPlan.description")}</CardDescription>
                     <div className="mt-4">
-                      <span className="text-4xl font-bold">138 000</span>
-                      <span className="text-gray-600 ml-2">FCFA/mois</span>
-                      <div className="text-sm text-gray-500">≈ 209€/mois</div>
+                      <span className="text-4xl font-bold">{t("pricing.proPlan.price")}</span>
+                      <div className="text-sm text-gray-500">{t("pricing.proPlan.priceEuro")}</div>
                     </div>
                   </CardHeader>
                   <CardContent>
