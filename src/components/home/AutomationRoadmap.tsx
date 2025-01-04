@@ -28,6 +28,46 @@ const AutomationRoadmap = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    hover: {
+      scale: 1.05,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
+  const arrowVariants = {
+    hidden: { opacity: 0, x: -10 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -45,24 +85,40 @@ const AutomationRoadmap = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-4 gap-8"
+        >
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm"
+              variants={itemVariants}
+              whileHover="hover"
+              className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm relative"
             >
-              <div className="mb-4">{step.icon}</div>
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.2 }}
+                className="mb-4"
+              >
+                {step.icon}
+              </motion.div>
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-gray-600">{step.description}</p>
               {index < steps.length - 1 && (
-                <ArrowRight className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <motion.div
+                  variants={arrowVariants}
+                  className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-gray-400"
+                >
+                  <ArrowRight />
+                </motion.div>
               )}
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
