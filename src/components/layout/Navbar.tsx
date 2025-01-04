@@ -35,6 +35,9 @@ const Navbar = () => {
             <Link to="/fastcom-pro" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               {t("nav.fastcomPro")}
             </Link>
+            <Link to="/pricing" className="text-gray-600 hover:text-[#9b87f5] transition-colors">
+              {t("nav.pricing")}
+            </Link>
             <a href={getSectionLink("services")} className="text-gray-600 hover:text-[#9b87f5] transition-colors">
               {t("nav.services")}
             </a>
@@ -78,6 +81,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 {t("nav.fastcomPro")}
+              </Link>
+              <Link
+                to="/pricing"
+                className="text-gray-600 hover:text-[#9b87f5] transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {t("nav.pricing")}
               </Link>
               <a
                 href={getSectionLink("services")}

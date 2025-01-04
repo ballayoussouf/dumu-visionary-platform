@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import CGV from "./pages/CGV";
 import Privacy from "./pages/Privacy";
 import FastComPro from "./pages/FastComPro";
+import Pricing from "./pages/Pricing";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/cgv" element={<CGV />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/fastcom-pro" element={<FastComPro />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </TooltipProvider>
     </QueryClientProvider>

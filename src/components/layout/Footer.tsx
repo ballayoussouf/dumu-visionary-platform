@@ -33,6 +33,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/pricing" className="text-gray-400 hover:text-dulu-orange transition-colors">
+                  {t("nav.pricing")}
+                </Link>
+              </li>
+              <li>
                 <a href={getSectionLink("services")} className="text-gray-400 hover:text-dulu-orange transition-colors">
                   {t("nav.services")}
                 </a>

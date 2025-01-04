@@ -5,7 +5,8 @@
     "about": "About",
     "contact": "Contact",
     "getStarted": "Get Started",
-    "fastcomPro": "FastCom Pro"
+    "fastcomPro": "FastCom Pro",
+    "pricing": "Pricing"
   },
   "hero": {
     "badge": "🚀 Digital Solutions for Your Business",
@@ -162,6 +163,55 @@
     "step4": {
       "title": "Optimization",
       "description": "Continuous monitoring and performance improvement"
+    }
+  },
+  "pricing": {
+    "title": "Our Offers",
+    "subtitle": "Tailored solutions to optimize your Meta advertising campaigns",
+    "standardPlan": {
+      "title": "Standard Plan",
+      "description": "Complete management of your advertising campaigns",
+      "features": [
+        "Complete campaign management",
+        "Creation of advertising visuals",
+        "Messages adapted to your audience",
+        "Personalized strategic support",
+        "Lead conversion advice",
+        "Free audit of existing campaigns"
+      ],
+      "cta": "Get Started"
+    },
+    "proPlan": {
+      "badge": "Recommended",
+      "title": "FastCom Pro",
+      "description": "Everything in Standard plus advanced features",
+      "features": [
+        "Everything in Standard plan",
+        "Advanced campaign optimization",
+        "Priority support with dedicated contact",
+        "Premium analytics tools",
+        "Lead conversion advice",
+        "Free audit of existing campaigns"
+      ],
+      "cta": "Choose FastCom Pro"
+    },
+    "benefits": {
+      "title": "Why Choose DULU Sarl?",
+      "subtitle": "Our expertise at the service of your growth",
+      "items": [
+        {
+          "title": "Proven Expertise",
+          "description": "A team of digital marketing experts with proven results"
+        },
+        {
+          "title": "Optimized ROI",
+          "description": "Maximization of your advertising return on investment"
+        },
+        {
+          "title": "Dedicated Support",
+          "description": "Personalized support to achieve your goals"
+        }
+      ]
     }
   }
 }

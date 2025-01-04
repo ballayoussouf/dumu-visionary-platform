@@ -5,7 +5,8 @@
     "about": "À propos",
     "contact": "Contact",
     "getStarted": "Commencer",
-    "fastcomPro": "FastCom Pro"
+    "fastcomPro": "FastCom Pro",
+    "pricing": "Tarifs"
   },
   "hero": {
     "badge": "🚀 Solutions digitales pour votre entreprise",
@@ -162,6 +163,55 @@
     "step4": {
       "title": "Optimisation",
       "description": "Suivi et amélioration continue des performances"
+    }
+  },
+  "pricing": {
+    "title": "Nos Offres",
+    "subtitle": "Des solutions sur mesure pour optimiser vos campagnes publicitaires Meta",
+    "standardPlan": {
+      "title": "Forfait Standard",
+      "description": "Gestion complète de vos campagnes publicitaires",
+      "features": [
+        "Gestion complète des campagnes",
+        "Création de visuels publicitaires",
+        "Messages adaptés à votre audience",
+        "Accompagnement stratégique personnalisé",
+        "Conseils sur la conversion des leads",
+        "Audit gratuit des campagnes existantes"
+      ],
+      "cta": "Commencer"
+    },
+    "proPlan": {
+      "badge": "Recommandé",
+      "title": "FastCom Pro",
+      "description": "Tout le forfait standard plus des fonctionnalités avancées",
+      "features": [
+        "Tout le forfait standard",
+        "Optimisation avancée des campagnes",
+        "Support prioritaire avec interlocuteur dédié",
+        "Outils analytiques premium",
+        "Conseils sur la conversion des leads",
+        "Audit gratuit des campagnes existantes"
+      ],
+      "cta": "Choisir FastCom Pro"
+    },
+    "benefits": {
+      "title": "Pourquoi choisir DULU Sarl ?",
+      "subtitle": "Notre expertise au service de votre croissance",
+      "items": [
+        {
+          "title": "Expertise Avérée",
+          "description": "Une équipe d'experts en marketing digital avec des résultats prouvés"
+        },
+        {
+          "title": "ROI Optimisé",
+          "description": "Maximisation de votre retour sur investissement publicitaire"
+        },
+        {
+          "title": "Support Dédié",
+          "description": "Un accompagnement personnalisé pour atteindre vos objectifs"
+        }
+      ]
     }
   }
 }
