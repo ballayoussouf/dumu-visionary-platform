@@ -15,6 +15,11 @@ const Pricing = () => {
     transition: { duration: 0.5 }
   };
 
+  const handleCallClick = () => {
+    window.location.href = "tel:+237693997244";
+    console.log("Initiating call to +237693997244");
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -68,7 +73,10 @@ const Pricing = () => {
                     </ul>
                   </CardContent>
                   <CardFooter>
-                    <Button className="w-full bg-dulu-orange hover:bg-dulu-orange/90">
+                    <Button 
+                      className="w-full bg-dulu-orange hover:bg-dulu-orange/90"
+                      onClick={handleCallClick}
+                    >
                       {t("pricing.standardPlan.cta")}
                     </Button>
                   </CardFooter>
@@ -106,7 +114,10 @@ const Pricing = () => {
                     </ul>
                   </CardContent>
                   <CardFooter>
-                    <Button className="w-full bg-dulu-orange hover:bg-dulu-orange/90">
+                    <Button 
+                      className="w-full bg-dulu-orange hover:bg-dulu-orange/90"
+                      onClick={handleCallClick}
+                    >
                       {t("pricing.proPlan.cta")}
                     </Button>
                   </CardFooter>
