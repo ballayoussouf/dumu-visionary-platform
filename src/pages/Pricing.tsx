@@ -52,7 +52,7 @@ const Pricing = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-4">
-                    {t("pricing.standardPlan.features", { returnObjects: true }).map((feature: string, index: number) => (
+                    {(t("pricing.standardPlan.features", { returnObjects: true }) as string[]).map((feature: string, index: number) => (
                       <li key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-dulu-orange shrink-0 mr-2" />
                         <span>{feature}</span>
@@ -91,7 +91,7 @@ const Pricing = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-4">
-                    {t("pricing.proPlan.features", { returnObjects: true }).map((feature: string, index: number) => (
+                    {(t("pricing.proPlan.features", { returnObjects: true }) as string[]).map((feature: string, index: number) => (
                       <li key={index} className="flex items-start">
                         <Check className="h-5 w-5 text-dulu-orange shrink-0 mr-2" />
                         <span>{feature}</span>
@@ -124,7 +124,7 @@ const Pricing = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {t("pricing.benefits.items", { returnObjects: true }).map((benefit: any, index: number) => (
+            {(t("pricing.benefits.items", { returnObjects: true }) as Array<{ title: string; description: string }>).map((benefit, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
