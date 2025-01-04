@@ -8,111 +8,113 @@
     "fastcomPro": "FastCom Pro"
   },
   "hero": {
-    "badge": "🚀 Solutions digitales pour votre entreprise",
-    "title": "Solutions digitales",
+    "badge": "🚀 Solutions Numériques pour Votre Entreprise",
+    "title": "Solutions Numériques",
     "highlight": "innovantes",
     "subtitle": "pour votre entreprise",
-    "description": "Experts en Media Buying et automatisation des réponses clients. Propulsez votre entreprise vers le futur avec Flow by Dulu.",
+    "description": "Experts en achat média et automatisation de la réponse client. Propulsez votre entreprise dans le futur avec Flow by Dulu.",
     "cta": {
-      "discover": "Découvrir nos services",
-      "contact": "Contactez-nous"
+      "discover": "Découvrez Nos Services",
+      "contact": "Contactez-Nous"
     },
     "stats": {
-      "clients": "Clients satisfaits",
-      "satisfaction": "Taux de satisfaction",
-      "support": "Support client"
+      "clients": "Clients Satisfaits",
+      "satisfaction": "Taux de Satisfaction",
+      "support": "Support Client"
     }
   },
   "about": {
-    "title": "Innovation africaine,",
-    "highlight": "impact mondial",
-    "description1": "DULU Sarl est née de la vision de transformer le paysage numérique africain. Basée à Douala, notre entreprise combine expertise technique et compréhension profonde des besoins locaux pour offrir des solutions numériques innovantes.",
-    "description2": "Notre mission est de propulser les entreprises africaines vers le futur numérique en leur fournissant des outils et services de pointe, adaptés à leurs besoins spécifiques.",
-    "button": "Notre histoire",
+    "title": "Innovation Africaine,",
+    "highlight": "Impact Global",
+    "description1": "DULU Sarl est née de la vision de transformer le paysage numérique africain. Basée à Douala, notre entreprise allie expertise technique et compréhension approfondie des besoins locaux pour offrir des solutions numériques innovantes.",
+    "description2": "Notre mission est de propulser les entreprises africaines dans le futur numérique en fournissant des outils et services de pointe adaptés à leurs besoins spécifiques.",
+    "button": "Notre Histoire",
     "stats": {
-      "experience": "Années d'expérience",
-      "clients": "Clients satisfaits",
-      "projects": "Projets réussis",
-      "support": "Support client"
+      "experience": "Années d'Expérience",
+      "clients": "Clients Satisfaits",
+      "projects": "Projets Réussis",
+      "support": "Support Client"
     }
   },
   "services": {
     "title": "Nos Services",
-    "subtitle": "Des solutions sur mesure pour optimiser votre présence numérique et automatiser vos interactions clients",
+    "subtitle": "Solutions sur mesure pour optimiser votre présence numérique et automatiser vos interactions clients",
     "mediaBuying": {
-      "title": "Media Buying Expert",
+      "title": "Expert en Achat Média",
       "description": "Optimisez vos campagnes publicitaires et maximisez votre ROI",
       "features": {
-        "messages": "Conception de messages publicitaires impactants",
+        "messages": "Conception de messages publicitaires percutants",
         "titles": "Création de titres et visuels accrocheurs",
         "optimization": "Optimisation continue et rapports détaillés",
-        "advice": "Conseils de conversion téléphonique offerts"
+        "advice": "Conseils gratuits pour la conversion par téléphone"
       },
-      "cta": "Découvrir l'offre complète"
+      "cta": "Découvrez l'Offre Complète"
     },
     "automation": {
-      "title": "Automatisation des réponses",
+      "title": "Automatisation des Réponses",
       "description": "Gérez efficacement vos communications clients",
       "features": {
         "responses": "Réponses automatisées intelligentes",
-        "integration": "Intégration multi-canal",
+        "integration": "Intégration multi-canaux",
         "personalization": "Personnalisation des messages",
         "analytics": "Suivi et analyse des interactions",
         "humanization": "Humanisation des messages"
       },
-      "cta": "Découvrir l'offre complète"
+      "cta": "Découvrez l'Offre Complète"
     }
   },
   "contact": {
-    "title": "Contactez-nous",
+    "title": "Contactez-Nous",
     "subtitle": "Prêt à transformer votre présence numérique ? Contactez-nous dès aujourd'hui.",
     "form": {
-      "fullName": "Nom complet",
+      "fullName": "Nom Complet",
       "email": "Email",
       "subject": "Sujet",
       "message": "Message",
-      "submit": "Envoyer le message",
+      "submit": "Envoyer le Message",
       "success": "Message envoyé !",
-      "successDesc": "Nous vous répondrons dans les plus brefs délais."
+      "successDesc": "Nous vous répondrons dès que possible.",
+      "error": "Erreur lors de l'envoi",
+      "errorDesc": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer."
     }
   },
   "whatsapp": {
     "title": "Envoyez-nous un message",
-    "defaultMessage": "Hello ! Je souhaite avoir plus d'information sur vos services...",
+    "defaultMessage": "Bonjour ! J'aimerais avoir plus d'informations sur vos services...",
     "sendButton": "Envoyer sur WhatsApp"
   },
   "footer": {
-    "quickLinks": "Liens rapides",
+    "quickLinks": "Liens Rapides",
     "contact": "Contact",
-    "followUs": "Suivez-nous",
+    "followUs": "Suivez-Nous",
     "rights": "Tous droits réservés",
-    "address": "Rue Mandessi Bell Bali-Douala",
-    "privacyPolicy": "Politique de confidentialité",
-    "termsOfService": "Conditions générales de ventes (CGV)",
+    "address": "Rue Mandessi Bell, Bali-Douala",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions de Service (ToS)",
     "description": "Transformez votre présence numérique avec nos solutions sur mesure",
     "rcNumber": "RC/DLA/2018/B/3820"
   },
   "fastcomPro": {
     "title": "FastCom Pro",
-    "subtitle": "Transformez votre présence publicitaire avec notre expertise en Media Buying et automatisation des réponses clients. Une approche complète qui maximise vos conversions.",
-    "contactUs": "Contactez-nous maintenant",
+    "subtitle": "Transformez votre présence publicitaire avec notre expertise en achat média et automatisation des réponses clients. Une approche complète qui maximise vos conversions.",
+    "contactUs": "Contactez-Nous Maintenant",
     "mediaBuying": {
-      "title": "Excellence en Media Buying",
+      "title": "Excellence en Achat Média",
       "subtitle": "Notre expertise transforme vos campagnes publicitaires en véritables moteurs de croissance",
       "features": {
-        "messageDesign": "Conception du message publicitaire",
-        "titleDesign": "Conception des titres publicitaires",
-        "imageDesign": "Conception des images publicitaires",
-        "targeting": "Ciblage publicitaire",
-        "campaign": "Lancement de la campagne Facebook",
-        "budget": "Optimisation du budget publicitaire",
-        "report": "Rapport de campagne détaillé",
-        "phoneAdvice": "Conseils de conversion téléphonique (Offert)",
-        "messageDesc": "Rédaction de messages impactants, optimisés pour captiver l'audience cible et rendre l'offre irrésistible.",
+        "messageDesign": "Conception de Message Publicitaire",
+        "titleDesign": "Conception de Titre Publicitaire",
+        "imageDesign": "Conception d'Image Publicitaire",
+        "targeting": "Ciblage Publicitaire",
+        "campaign": "Lancement de Campagne Facebook",
+        "budget": "Optimisation du Budget",
+        "report": "Rapport de Campagne Détailé",
+        "phoneAdvice": "Conseils de Conversion par Téléphone (Gratuits)",
+        "messageDesc": "Rédaction de messages percutants, optimisés pour captiver le public cible et rendre l'offre irrésistible.",
         "titleDesc": "Création de titres accrocheurs et engageants, adaptés à l'objectif de la campagne.",
-        "imageDesc": "Élaboration ou sélection de visuels créatifs et percutants, renforçant le message.",
-        "targetingDesc": "Paramétrage précis pour atteindre efficacement la bonne audience (âge, sexe, intérêts, géolocalisation, etc.).",
-        "campaignDesc": "Mise en ligne des annonces avec tous les réglages techniques nécessaires.",
+        "imageDesc": "Développement ou sélection de visuels créatifs et frappants, renforçant le message.",
+        "targetingDesc": "Paramètres précis pour atteindre efficacement le bon public (âge, sexe, intérêts, géolocalisation, etc.).",
+        "campaignDesc": "Lancement de publicités avec tous les réglages techniques nécessaires.",
         "budgetDesc": "Suivi quotidien et ajustements stratégiques pour maximiser le ROI.",
         "reportDesc": "Analyse complète des performances : ROI, CPC, CTR, conversions, etc.",
         "phoneAdviceDesc": "Conseils pratiques pour convertir efficacement les leads générés."
@@ -124,44 +126,44 @@
         "autoResponses": "Réponses Automatisées",
         "customMessages": "Messages Personnalisés",
         "fastProcessing": "Traitement Rapide",
-        "autoResponsesDesc": "Système intelligent qui répond instantanément aux messages de vos clients 24h/24 et 7j/7.",
+        "autoResponsesDesc": "Système intelligent qui répond instantanément aux messages de vos clients 24/7.",
         "customMessagesDesc": "Réponses adaptées selon le type de demande et le profil du client.",
         "fastProcessingDesc": "Gestion efficace des demandes clients avec des réponses instantanées et pertinentes."
       }
     },
     "benefits": {
-      "title": "Pourquoi choisir notre expertise ?",
+      "title": "Pourquoi Choisir Notre Expertise ?",
       "optimization": "Optimisation continue des campagnes",
-      "targeting": "Ciblage précis de votre audience",
-      "messages": "Messages publicitaires impactants",
+      "targeting": "Ciblage précis de l'audience",
+      "messages": "Messages publicitaires percutants",
       "roi": "Maximisation du ROI",
       "reports": "Rapports détaillés et transparents",
-      "support": "Support dédié et réponses automatisées 24/7"
+      "support": "Support dédié 24/7 et réponses automatisées"
     },
     "cta": {
-      "title": "Prêt à transformer votre stratégie publicitaire ?",
-      "description": "Découvrez comment notre expertise en Media Buying et automatisation peut rendre votre offre irrésistible et maximiser vos conversions.",
-      "button": "Appelez-nous maintenant"
+      "title": "Prêt à Transformer Votre Stratégie Publicitaire ?",
+      "description": "Découvrez comment notre expertise en achat média et automatisation peut rendre votre offre irrésistible et maximiser vos conversions.",
+      "button": "Appelez-Nous Maintenant"
     }
   },
   "automationRoadmap": {
-    "title": "Notre processus d'automatisation",
+    "title": "Notre Processus d'Automatisation",
     "subtitle": "Une approche structurée pour optimiser vos interactions clients",
     "step1": {
-      "title": "Collecte des données",
+      "title": "Collecte de Données",
       "description": "Analyse approfondie de vos besoins et objectifs"
     },
     "step2": {
       "title": "Configuration",
-      "description": "Mise en place des réponses automatisées personnalisées"
+      "description": "Mise en place de réponses automatisées personnalisées"
     },
     "step3": {
       "title": "Automatisation",
-      "description": "Déploiement des processus automatisés"
+      "description": "Déploiement de processus automatisés"
     },
     "step4": {
       "title": "Optimisation",
-      "description": "Suivi et amélioration continue des performances"
+      "description": "Suivi continu et amélioration des performances"
     }
   }
 }

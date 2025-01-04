@@ -4,17 +4,45 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 
 const Contact = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const form = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: t("contact.form.success"),
-      description: t("contact.form.successDesc"),
-    });
+    
+    if (!form.current) return;
+
+    try {
+      console.log("Sending email...");
+      await emailjs.sendForm(
+        'YOUR_SERVICE_ID', // À remplacer
+        'YOUR_TEMPLATE_ID', // À remplacer
+        form.current,
+        'YOUR_PUBLIC_KEY' // À remplacer
+      );
+      
+      console.log("Email sent successfully");
+      toast({
+        title: t("contact.form.success"),
+        description: t("contact.form.successDesc"),
+      });
+      
+      if (form.current) {
+        form.current.reset();
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        variant: "destructive",
+        title: t("contact.form.error"),
+        description: t("contact.form.errorDesc"),
+      });
+    }
   };
 
   const formVariants = {
@@ -57,24 +85,26 @@ const Contact = () => {
           animate="visible"
           className="max-w-2xl mx-auto"
         >
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form ref={form} onSubmit={handleSubmit} className="space-y-6">
             <motion.div variants={itemVariants} className="grid md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="user_name" className="block text-sm font-medium text-gray-700 mb-2">
                   {t("contact.form.fullName")}
                 </label>
                 <Input
-                  id="name"
+                  id="user_name"
+                  name="user_name"
                   placeholder={t("contact.form.fullName")}
                   required
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="user_email" className="block text-sm font-medium text-gray-700 mb-2">
                   {t("contact.form.email")}
                 </label>
                 <Input
-                  id="email"
+                  id="user_email"
+                  name="user_email"
                   type="email"
                   placeholder="votre@email.com"
                   required
@@ -88,6 +118,7 @@ const Contact = () => {
               </label>
               <Input
                 id="subject"
+                name="subject"
                 placeholder={t("contact.form.subject")}
                 required
               />
@@ -99,6 +130,7 @@ const Contact = () => {
               </label>
               <Textarea
                 id="message"
+                name="message"
                 placeholder={t("contact.form.message")}
                 className="min-h-[150px]"
                 required
