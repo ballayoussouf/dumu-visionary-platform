@@ -144,26 +144,24 @@
       "button": "Appelez-nous maintenant"
     }
   },
-  "testimonials": {
-    "title": "Ils nous font confiance",
-    "subtitle": "Découvrez ce que nos clients disent de nous et pourquoi ils continuent de nous faire confiance pour leurs projets digitaux.",
-    "partners": "Nos Partenaires",
-    "clients": {
-      "client1": {
-        "name": "Jean Dupont",
-        "role": "CEO, TechCam",
-        "content": "DULU a transformé notre approche du marketing digital. Leur expertise en Media Buying est incomparable."
-      },
-      "client2": {
-        "name": "Marie Kouam",
-        "role": "Directrice Marketing, InnovCorp",
-        "content": "L'automatisation mise en place par DULU nous a permis d'améliorer notre réactivité client de 300%."
-      },
-      "client3": {
-        "name": "Paul Biya",
-        "role": "Fondateur, StartupAfrica",
-        "content": "Une équipe professionnelle qui comprend vraiment les enjeux du marché africain."
-      }
+  "automationRoadmap": {
+    "title": "Notre processus d'automatisation",
+    "subtitle": "Une approche structurée pour optimiser vos interactions clients",
+    "step1": {
+      "title": "Collecte des données",
+      "description": "Analyse approfondie de vos besoins et objectifs"
+    },
+    "step2": {
+      "title": "Configuration",
+      "description": "Mise en place des réponses automatisées personnalisées"
+    },
+    "step3": {
+      "title": "Automatisation",
+      "description": "Déploiement des processus automatisés"
+    },
+    "step4": {
+      "title": "Optimisation",
+      "description": "Suivi et amélioration continue des performances"
     }
   }
 }
