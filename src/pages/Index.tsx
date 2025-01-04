@@ -4,7 +4,7 @@ import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
 import About from "@/components/home/About";
 import Contact from "@/components/home/Contact";
-import AutomationRoadmap from "@/components/home/AutomationRoadmap";
+import Testimonials from "@/components/home/Testimonials";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
       <Hero />
       <Services />
       <About />
-      <AutomationRoadmap />
+      <Testimonials />
       <Contact />
       <WhatsAppButton />
       <Footer />

@@ -1,16 +1,169 @@
 {
-  "automation": {
-    "title": "Our Automation Process",
-    "subtitle": "Discover how we automate your services for an optimal customer experience",
-    "steps": {
-      "request": "Client Request",
-      "requestDesc": "Submit your request through our intuitive platform",
-      "ai": "AI Analysis",
-      "aiDesc": "Our AI analyzes your needs and prepares a personalized solution",
-      "process": "Automated Processing",
-      "processDesc": "Your request is automatically processed with precision",
-      "delivery": "Quick Delivery",
-      "deliveryDesc": "Receive your optimized solution in the shortest time possible"
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "fastcomPro": "FastCom Pro"
+  },
+  "hero": {
+    "badge": "🚀 Digital Solutions for Your Business",
+    "title": "Digital Solutions",
+    "highlight": "innovative",
+    "subtitle": "for your business",
+    "description": "Media Buying and customer response automation experts. Propel your business into the future with Flow by Dulu.",
+    "cta": {
+      "discover": "Discover Our Services",
+      "contact": "Contact Us"
+    },
+    "stats": {
+      "clients": "Happy Clients",
+      "satisfaction": "Satisfaction Rate",
+      "support": "Customer Support"
+    }
+  },
+  "about": {
+    "title": "African Innovation,",
+    "highlight": "Global Impact",
+    "description1": "DULU Sarl was born from the vision of transforming the African digital landscape. Based in Douala, our company combines technical expertise with a deep understanding of local needs to deliver innovative digital solutions.",
+    "description2": "Our mission is to propel African businesses into the digital future by providing cutting-edge tools and services tailored to their specific needs.",
+    "button": "Our Story",
+    "stats": {
+      "experience": "Years of Experience",
+      "clients": "Happy Clients",
+      "projects": "Successful Projects",
+      "support": "Customer Support"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Tailored solutions to optimize your digital presence and automate your customer interactions",
+    "mediaBuying": {
+      "title": "Media Buying Expert",
+      "description": "Optimize your advertising campaigns and maximize your ROI",
+      "features": {
+        "messages": "Design of impactful advertising messages",
+        "titles": "Creation of catchy titles and visuals",
+        "optimization": "Continuous optimization and detailed reports",
+        "advice": "Free phone conversion advice"
+      },
+      "cta": "Discover the Complete Offer"
+    },
+    "automation": {
+      "title": "Response Automation",
+      "description": "Efficiently manage your customer communications",
+      "features": {
+        "responses": "Intelligent automated responses",
+        "integration": "Multi-channel integration",
+        "personalization": "Message personalization",
+        "analytics": "Interaction tracking and analysis",
+        "humanization": "Message humanization"
+      },
+      "cta": "Discover the Complete Offer"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your digital presence? Contact us today.",
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent!",
+      "successDesc": "We will get back to you as soon as possible."
+    }
+  },
+  "whatsapp": {
+    "title": "Send us a message",
+    "defaultMessage": "Hello! I would like to have more information about your services...",
+    "sendButton": "Send on WhatsApp"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved",
+    "address": "Mandessi Bell Street, Bali-Douala",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service (ToS)",
+    "description": "Transform your digital presence with our tailored solutions",
+    "rcNumber": "RC/DLA/2018/B/3820"
+  },
+  "fastcomPro": {
+    "title": "FastCom Pro",
+    "subtitle": "Transform your advertising presence with our Media Buying expertise and customer response automation. A comprehensive approach that maximizes your conversions.",
+    "contactUs": "Contact Us Now",
+    "mediaBuying": {
+      "title": "Media Buying Excellence",
+      "subtitle": "Our expertise transforms your advertising campaigns into real growth engines",
+      "features": {
+        "messageDesign": "Advertising Message Design",
+        "titleDesign": "Advertising Title Design",
+        "imageDesign": "Advertising Image Design",
+        "targeting": "Advertising Targeting",
+        "campaign": "Facebook Campaign Launch",
+        "budget": "Budget Optimization",
+        "report": "Detailed Campaign Report",
+        "phoneAdvice": "Phone Conversion Tips (Free)",
+        "messageDesc": "Writing impactful messages, optimized to captivate the target audience and make the offer irresistible.",
+        "titleDesc": "Creation of catchy and engaging titles, adapted to the campaign objective.",
+        "imageDesc": "Development or selection of creative and striking visuals, reinforcing the message.",
+        "targetingDesc": "Precise settings to effectively reach the right audience (age, gender, interests, geolocation, etc.).",
+        "campaignDesc": "Launch of ads with all necessary technical settings.",
+        "budgetDesc": "Daily monitoring and strategic adjustments to maximize ROI.",
+        "reportDesc": "Complete performance analysis: ROI, CPC, CTR, conversions, etc.",
+        "phoneAdviceDesc": "Practical advice for effectively converting generated leads."
+      }
+    },
+    "automation": {
+      "title": "Response Automation",
+      "features": {
+        "autoResponses": "Automated Responses",
+        "customMessages": "Custom Messages",
+        "fastProcessing": "Fast Processing",
+        "autoResponsesDesc": "Intelligent system that responds instantly to your customers' messages 24/7.",
+        "customMessagesDesc": "Responses adapted according to the type of request and customer profile.",
+        "fastProcessingDesc": "Efficient handling of customer requests with instant and relevant responses."
+      }
+    },
+    "benefits": {
+      "title": "Why Choose Our Expertise?",
+      "optimization": "Continuous campaign optimization",
+      "targeting": "Precise audience targeting",
+      "messages": "Impactful advertising messages",
+      "roi": "ROI maximization",
+      "reports": "Detailed and transparent reports",
+      "support": "24/7 dedicated support and automated responses"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Advertising Strategy?",
+      "description": "Discover how our Media Buying expertise and automation can make your offer irresistible and maximize your conversions.",
+      "button": "Call Us Now"
+    }
+  },
+  "testimonials": {
+    "title": "They Trust Us",
+    "subtitle": "Discover what our clients say about us and why they continue to trust us with their digital projects.",
+    "partners": "Our Partners",
+    "clients": {
+      "client1": {
+        "name": "Jean Dupont",
+        "role": "CEO, TechCam",
+        "content": "DULU has transformed our approach to digital marketing. Their Media Buying expertise is unmatched."
+      },
+      "client2": {
+        "name": "Marie Kouam",
+        "role": "Marketing Director, InnovCorp",
+        "content": "The automation implemented by DULU has improved our customer responsiveness by 300%."
+      },
+      "client3": {
+        "name": "Paul Biya",
+        "role": "Founder, StartupAfrica",
+        "content": "A professional team that truly understands the challenges of the African market."
+      }
     }
   }
 }
