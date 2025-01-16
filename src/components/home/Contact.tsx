@@ -19,10 +19,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        'service_o5lvmtv',
-        'template_tzp0srr',
+        'service_jbs06wl',
+        'template_agzvq6k',
         form.current,
-        'UaJNLhK3dKfRorHOj'
+        'HzSqYcuScnzmGGruq'
       );
 
       toast({
