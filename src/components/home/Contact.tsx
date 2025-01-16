@@ -19,15 +19,15 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // À remplacer par votre Service ID EmailJS
-        'YOUR_TEMPLATE_ID', // À remplacer par votre Template ID EmailJS
+        'service_o5lvmtv',
+        'template_tzp0srr',
         form.current,
-        'YOUR_PUBLIC_KEY' // À remplacer par votre Public Key EmailJS
+        'UaJNLhK3dKfRorHOj'
       );
 
       toast({
-        title: "Message envoyé !",
-        description: "Nous vous répondrons dans les plus brefs délais.",
+        title: t("contact.form.success.title"),
+        description: t("contact.form.success.description"),
       });
 
       if (form.current) {
@@ -36,8 +36,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending email:', error);
       toast({
-        title: "Erreur",
-        description: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.",
+        title: t("contact.form.error.title"),
+        description: t("contact.form.error.description"),
         variant: "destructive"
       });
     }
