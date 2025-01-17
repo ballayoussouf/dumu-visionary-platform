@@ -50,7 +50,11 @@ const LanguageSwitch = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="flex items-center">
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className="flex items-center focus-visible:ring-0 focus-visible:ring-offset-0"
+        >
           <Globe className="h-4 w-4" />
           <span className="ml-2 flex items-center">
             {i18n.language === 'fr' ? <FrenchFlag /> : <EnglishFlag />}
