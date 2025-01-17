@@ -73,8 +73,14 @@
       "subject": "Sujet",
       "message": "Message",
       "submit": "Envoyer le message",
-      "success": "Message envoyé !",
-      "successDesc": "Nous vous répondrons dans les plus brefs délais."
+      "success": {
+        "title": "Message envoyé !",
+        "description": "Nous vous répondrons dans les plus brefs délais."
+      },
+      "error": {
+        "title": "Erreur",
+        "description": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer."
+      }
     }
   },
   "whatsapp": {
@@ -165,7 +171,6 @@
       "description": "Suivi et amélioration continue des performances"
     }
   },
-  
   "pricing": {
     "title": "Nos Offres",
     "subtitle": "Solutions professionnelles pour optimiser vos campagnes publicitaires Meta (Facebook et Instagram)",

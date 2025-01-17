@@ -73,8 +73,14 @@
       "subject": "Subject",
       "message": "Message",
       "submit": "Send Message",
-      "success": "Message sent!",
-      "successDesc": "We will get back to you as soon as possible."
+      "success": {
+        "title": "Message sent!",
+        "description": "We will get back to you as soon as possible."
+      },
+      "error": {
+        "title": "Error",
+        "description": "An error occurred while sending the message. Please try again."
+      }
     }
   },
   "whatsapp": {
@@ -165,7 +171,6 @@
       "description": "Continuous monitoring and performance improvement"
     }
   },
-  
   "pricing": {
     "title": "Our Offers",
     "subtitle": "Professional solutions to optimize your Meta (Facebook and Instagram) advertising campaigns",
