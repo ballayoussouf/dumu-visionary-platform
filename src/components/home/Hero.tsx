@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-20">
-        <div className="max-w-2xl lg:max-w-3xl">
+        <div className="max-w-3xl">
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -56,7 +56,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6"
           >
             {t("hero.title")}{" "}
             <span className="text-dulu-orange relative">
@@ -73,7 +73,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-600 mb-8 pr-4 lg:pr-8"
+            className="text-xl text-gray-600 mb-8"
           >
             {t("hero.description")}
           </motion.p>
