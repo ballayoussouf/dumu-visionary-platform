@@ -20,7 +20,7 @@ const SeoSchema = () => {
           "longitude": "9.7679"
         },
         "url": "https://flowbydulu.com",
-        "telephone": "+237-XXX-XXX-XXX",
+        "telephone": "+237 693997244",
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
