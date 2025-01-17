@@ -25,20 +25,24 @@ const LanguageSwitch = () => {
 
   const EnglishFlag = () => (
     <div className="w-4 h-3 relative flex mr-2">
-      <div className="absolute inset-0 bg-white"></div>
-      <div className="absolute inset-0 flex">
-        <div className="w-[20%] h-full bg-blue-600"></div>
-        <div className="flex-1"></div>
+      <div className="absolute inset-0 bg-[#012169]"></div>
+      <div className="absolute inset-0">
+        <div className="absolute left-0 top-0 w-full h-full">
+          <div className="absolute transform rotate-45 bg-white h-[2px] w-full top-1/2 -translate-y-1/2"></div>
+          <div className="absolute transform -rotate-45 bg-white h-[2px] w-full top-1/2 -translate-y-1/2"></div>
+        </div>
       </div>
       <div className="absolute inset-0">
-        <div className="w-full h-[20%] bg-red-600"></div>
-        <div className="w-full h-[20%] bg-red-600 absolute top-1/2 -translate-y-1/2"></div>
-        <div className="w-full h-[20%] bg-red-600 absolute bottom-0"></div>
+        <div className="absolute transform rotate-45 bg-[#C8102E] h-[1px] w-full top-1/2 -translate-y-1/2"></div>
+        <div className="absolute transform -rotate-45 bg-[#C8102E] h-[1px] w-full top-1/2 -translate-y-1/2"></div>
       </div>
       <div className="absolute inset-0">
-        <div className="h-full w-[20%] bg-red-600"></div>
-        <div className="h-full w-[20%] bg-red-600 absolute left-1/2 -translate-x-1/2"></div>
-        <div className="h-full w-[20%] bg-red-600 absolute right-0"></div>
+        <div className="absolute bg-white h-full w-[2px] left-1/2 -translate-x-1/2"></div>
+        <div className="absolute bg-white w-full h-[2px] top-1/2 -translate-y-1/2"></div>
+      </div>
+      <div className="absolute inset-0">
+        <div className="absolute bg-[#C8102E] h-full w-[1px] left-1/2 -translate-x-1/2"></div>
+        <div className="absolute bg-[#C8102E] w-full h-[1px] top-1/2 -translate-y-1/2"></div>
       </div>
     </div>
   );
