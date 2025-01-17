@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-20">
-        <div className="max-w-3xl">
+        <div className="max-w-xl lg:max-w-2xl xl:max-w-3xl">
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -73,7 +73,7 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-xl text-gray-600 mb-8"
+            className="text-lg md:text-xl text-gray-600 mb-8 pr-4 lg:pr-8 xl:pr-12"
           >
             {t("hero.description")}
           </motion.p>
