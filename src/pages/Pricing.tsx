@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,15 @@ import { motion } from "framer-motion";
 
 const Pricing = () => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    console.log("Tracking Lead event for pricing page");
+    // @ts-ignore
+    if (window.fbq) {
+      // @ts-ignore
+      window.fbq('track', 'Lead');
+    }
+  }, []);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
