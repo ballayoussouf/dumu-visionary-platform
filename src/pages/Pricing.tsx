@@ -1,14 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Facebook, Instagram, Target, ChartBarIcon, Users, HeadphonesIcon } from "lucide-react";
+import { Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import FreeAdsForm from "@/components/pricing/FreeAdsForm";
 
 const Pricing = () => {
   const { t } = useTranslation();
+  const [showFreeAdsForm, setShowFreeAdsForm] = useState(false);
 
   useEffect(() => {
     console.log("Tracking Lead event for pricing page");
@@ -44,8 +46,7 @@ const Pricing = () => {
               variants={fadeInUp}
             >
               <div className="flex items-center justify-center gap-2 mb-4">
-                <Facebook className="text-dulu-orange" size={24} />
-                <Instagram className="text-dulu-orange" size={24} />
+                <Check className="text-dulu-orange" size={24} />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 {t("pricing.title")}
@@ -54,6 +55,31 @@ const Pricing = () => {
                 {t("pricing.subtitle")}
               </p>
             </motion.div>
+
+            {/* Free Ads Offer Section */}
+            <section className="py-12 bg-gradient-to-r from-dulu-orange/10 to-dulu-orange/20">
+              <div className="container mx-auto px-4">
+                <motion.div 
+                  className="text-center max-w-2xl mx-auto"
+                  initial="initial"
+                  animate="animate"
+                  variants={fadeInUp}
+                >
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    {t("pricing.freeAds.title")}
+                  </h2>
+                  <p className="text-xl text-gray-600 mb-8">
+                    {t("pricing.freeAds.subtitle")}
+                  </p>
+                  <Button 
+                    onClick={() => setShowFreeAdsForm(true)}
+                    className="bg-dulu-orange hover:bg-dulu-orange/90 text-white px-8 py-6 text-lg"
+                  >
+                    {t("pricing.freeAds.cta")}
+                  </Button>
+                </motion.div>
+              </div>
+            </section>
 
             {/* Pricing Cards */}
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -170,6 +196,7 @@ const Pricing = () => {
         </section>
       </div>
       <Footer />
+      <FreeAdsForm open={showFreeAdsForm} onOpenChange={setShowFreeAdsForm} />
     </div>
   );
 };

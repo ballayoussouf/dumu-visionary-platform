@@ -222,6 +222,22 @@
           "description": "Un accompagnement personnalisé pour atteindre vos objectifs"
         }
       ]
+    },
+    "freeAds": {
+      "title": "🎁 Offre Spéciale !",
+      "subtitle": "Tentez de gagner jusqu'à 2 jours de publicité gratuite",
+      "cta": "En profiter",
+      "form": {
+        "title": "À quelques clics de votre publicité gratuite !",
+        "name": "Votre nom",
+        "email": "Votre email",
+        "phone": "Votre numéro de téléphone",
+        "submit": "Valider",
+        "success": {
+          "title": "Félicitations !",
+          "description": "Nous avons bien reçu votre participation. Notre équipe vous contactera très prochainement pour la suite du processus."
+        }
+      }
     }
   }
 }
