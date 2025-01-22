@@ -3,7 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Facebook, Instagram } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import FreeAdsForm from "@/components/pricing/FreeAdsForm";
@@ -47,6 +47,11 @@ const Pricing = () => {
             >
               <div className="flex items-center justify-center gap-2 mb-4">
                 <Check className="text-dulu-orange" size={24} />
+              </div>
+              {/* Social Media Icons */}
+              <div className="flex justify-center space-x-4 mb-6">
+                <Facebook className="w-8 h-8 text-[#1877F2]" />
+                <Instagram className="w-8 h-8 text-[#E4405F]" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 {t("pricing.title")}
