@@ -4,7 +4,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { CheckCircle } from "lucide-react";
 import emailjs from '@emailjs/browser';
+import Confetti from 'react-confetti';
+import { motion } from "framer-motion";
 
 interface FreeAdsFormProps {
   open: boolean;
@@ -16,6 +19,7 @@ const FreeAdsForm = ({ open, onOpenChange }: FreeAdsFormProps) => {
   const { toast } = useToast();
   const form = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,15 +42,24 @@ const FreeAdsForm = ({ open, onOpenChange }: FreeAdsFormProps) => {
         'HzSqYcuScnzmGGruq'
       );
 
+      setShowSuccess(true);
+      
       toast({
         title: t("pricing.freeAds.form.success.title"),
         description: t("pricing.freeAds.form.success.description"),
       });
 
+      // Réinitialiser le formulaire
       if (form.current) {
         form.current.reset();
       }
-      onOpenChange(false);
+
+      // Attendre 3 secondes avant de fermer le modal
+      setTimeout(() => {
+        setShowSuccess(false);
+        onOpenChange(false);
+      }, 3000);
+
     } catch (error) {
       console.error('Error sending email:', error);
       toast({
@@ -62,6 +75,26 @@ const FreeAdsForm = ({ open, onOpenChange }: FreeAdsFormProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
+        {showSuccess && (
+          <>
+            <Confetti
+              width={window.innerWidth}
+              height={window.innerHeight}
+              recycle={false}
+              numberOfPieces={200}
+            />
+            <motion.div 
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              className="absolute inset-0 flex flex-col items-center justify-center bg-white bg-opacity-90 z-50"
+            >
+              <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
+              <p className="text-xl font-semibold text-center">
+                {t("pricing.freeAds.form.success.title")}
+              </p>
+            </motion.div>
+          </>
+        )}
         <DialogHeader>
           <DialogTitle>{t("pricing.freeAds.form.title")}</DialogTitle>
         </DialogHeader>
