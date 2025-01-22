@@ -45,10 +45,6 @@ const Pricing = () => {
               animate="animate"
               variants={fadeInUp}
             >
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <Check className="text-dulu-orange" size={24} />
-              </div>
-              {/* Social Media Icons */}
               <div className="flex justify-center space-x-4 mb-6">
                 <Facebook className="w-8 h-8 text-[#1877F2]" />
                 <Instagram className="w-8 h-8 text-[#E4405F]" />
