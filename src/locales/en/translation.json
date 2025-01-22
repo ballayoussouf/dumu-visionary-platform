@@ -1,4 +1,3 @@
-<lov-code>
 {
   "nav": {
     "home": "Home",
@@ -153,4 +152,92 @@
     }
   },
   "automationRoadmap": {
-   
+    "title": "Our Automation Process",
+    "subtitle": "A structured approach to optimize your customer interactions",
+    "step1": {
+      "title": "Data Collection",
+      "description": "In-depth analysis of your needs and objectives"
+    },
+    "step2": {
+      "title": "Configuration",
+      "description": "Setting up customized automated responses"
+    },
+    "step3": {
+      "title": "Automation",
+      "description": "Deployment of automated processes"
+    },
+    "step4": {
+      "title": "Optimization",
+      "description": "Continuous monitoring and performance improvement"
+    }
+  },
+  "pricing": {
+    "title": "Our Offers",
+    "subtitle": "Professional solutions to optimize your Meta (Facebook and Instagram) advertising campaigns",
+    "standardPlan": {
+      "title": "Standard Plan",
+      "price": "99,000 FCFA",
+      "priceEuro": "≈ 150€/month",
+      "description": "Complete management of your Meta advertising campaigns",
+      "features": [
+        "Complete campaign management",
+        "Creation of advertising visuals",
+        "Messages adapted to your audience",
+        "Personalized strategic support",
+        "Lead conversion advice",
+        "Free audit of existing campaigns"
+      ],
+      "cta": "Book a Free Call"
+    },
+    "proPlan": {
+      "badge": "Recommended",
+      "title": "FastCom Pro",
+      "price": "138,000 FCFA",
+      "priceEuro": "≈ 209€/month",
+      "description": "All standard plan features plus advanced functionalities",
+      "features": [
+        "All standard plan features",
+        "Advanced campaign optimization",
+        "Priority support with dedicated contact",
+        "Premium analytical tools",
+        "Lead conversion advice",
+        "Free audit of existing campaigns"
+      ],
+      "cta": "Choose FastCom Pro"
+    },
+    "benefits": {
+      "title": "Why Choose DULU Sarl?",
+      "subtitle": "Our expertise at the service of your growth",
+      "items": [
+        {
+          "title": "Proven Meta Expertise",
+          "description": "A team of Facebook and Instagram advertising experts with proven results"
+        },
+        {
+          "title": "Optimized ROI",
+          "description": "Maximization of your advertising return on investment"
+        },
+        {
+          "title": "Dedicated Support",
+          "description": "Personalized support to achieve your objectives"
+        }
+      ]
+    },
+    "freeAds": {
+      "title": "🎁 Special Offer!",
+      "subtitle": "Try to win up to 2 days of free advertising",
+      "cta": "Take Advantage",
+      "form": {
+        "title": "Just a few clicks away from your free advertising!",
+        "name": "Your name",
+        "email": "Your email",
+        "phone": "Your phone number",
+        "submit": "Submit",
+        "success": {
+          "title": "Congratulations!",
+          "description": "We have received your participation. Our team will contact you very soon for the next steps."
+        }
+      }
+    }
+  }
+}
