@@ -19,7 +19,7 @@ const DuluBeta = () => {
   const handleAndroidDownload = () => {
     setDownloadingAndroid(true);
     setTimeout(() => {
-      window.open("http://31.97.153.129/dulu-finance/dulu-finance-pilot-release.apk", "_blank");
+      window.open("https://dulu-finance.duckdns.org/dulu-finance/dulu-finance-pilot-release.apk", "_blank");
       setDownloadingAndroid(false);
     }, 1500);
   };
