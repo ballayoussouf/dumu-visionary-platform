@@ -19,7 +19,7 @@ const DuluBeta = () => {
   const handleAndroidDownload = () => {
     setDownloadingAndroid(true);
     setTimeout(() => {
-      window.open("https://drive.google.com/file/d/139mstBBYc8mwhHX2s2U3buN7tZXFtdAK/view?usp=drive_link", "_blank");
+      window.open("http://31.97.153.129/dulu-finance/dulu-finance-pilot-release.apk", "_blank");
       setDownloadingAndroid(false);
     }, 1500);
   };
