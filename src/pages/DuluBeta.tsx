@@ -185,7 +185,11 @@ const DuluBeta = () => {
                   className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-4 sm:p-6 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-green-400/30"
                 >
                   <div className="flex items-center justify-center gap-3 sm:gap-4">
-                    <Phone className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+                    <img 
+                      src="/lovable-uploads/e80f4e96-1392-4390-ae86-06fe85b1bbd2.png" 
+                      alt="Android" 
+                      className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" 
+                    />
                     <span className="flex-1 text-center">Télécharger pour Android</span>
                     {downloadingAndroid && (
                       <motion.div
@@ -203,7 +207,11 @@ const DuluBeta = () => {
                   className="w-full bg-gradient-to-r from-blue-500 to-blue-600 opacity-60 text-white p-4 sm:p-6 text-base sm:text-lg font-semibold rounded-xl cursor-not-allowed border border-blue-400/30"
                 >
                   <div className="flex items-center justify-center gap-3 sm:gap-4">
-                    <Apple className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+                    <img 
+                      src="/lovable-uploads/8d2cbd3a-0ab2-4ddb-bb5e-3af244ab7177.png" 
+                      alt="iOS" 
+                      className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" 
+                    />
                     <span className="flex-1 text-center">iOS - En cours de développement</span>
                   </div>
                 </Button>
