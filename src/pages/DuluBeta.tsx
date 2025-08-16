@@ -68,7 +68,7 @@ const DuluBeta = () => {
         >
           <div className="flex justify-center mb-6">
             <motion.div 
-              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-2xl border-2 border-white/20 p-2"
+              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-2xl border-2 border-white/20 overflow-hidden"
               animate={{ 
                 scale: [1, 1.05, 1],
                 rotateY: [0, 180, 360]
@@ -82,7 +82,7 @@ const DuluBeta = () => {
               <img 
                 src="/lovable-uploads/9a4a7235-e785-4594-a953-91bc5fd55128.png" 
                 alt="DULU Finance Manager Logo" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </motion.div>
           </div>
