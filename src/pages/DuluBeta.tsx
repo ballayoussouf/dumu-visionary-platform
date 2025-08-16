@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Download, Smartphone, Star, Shield, Zap, TrendingUp, CheckCircle } from "lucide-react";
+import { Download, Phone, Apple, Star, Shield, Zap, TrendingUp, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -176,7 +176,7 @@ const DuluBeta = () => {
                   className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-4 sm:p-6 text-base sm:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-green-400/30"
                 >
                   <div className="flex items-center justify-center gap-3 sm:gap-4">
-                    <Smartphone className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+                    <Phone className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
                     <span className="flex-1 text-center">Télécharger pour Android</span>
                     {downloadingAndroid && (
                       <motion.div
@@ -194,7 +194,7 @@ const DuluBeta = () => {
                   className="w-full bg-gradient-to-r from-blue-500 to-blue-600 opacity-60 text-white p-4 sm:p-6 text-base sm:text-lg font-semibold rounded-xl cursor-not-allowed border border-blue-400/30"
                 >
                   <div className="flex items-center justify-center gap-3 sm:gap-4">
-                    <Smartphone className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+                    <Apple className="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
                     <span className="flex-1 text-center">iOS - En cours de développement</span>
                   </div>
                 </Button>
