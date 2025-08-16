@@ -228,7 +228,7 @@ const DuluBeta = () => {
                   </div>
                   <div className="bg-white/5 p-3 rounded-lg">
                     <div className="text-white font-semibold text-sm sm:text-base">Dernière MAJ</div>
-                    <div className="text-white/80 text-sm">15 Jan 2025</div>
+                    <div className="text-white/80 text-sm">15 Août 2025</div>
                   </div>
                 </div>
               </Card>
