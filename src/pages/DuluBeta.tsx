@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Download, Phone, Apple, Star, Shield, Zap, TrendingUp, CheckCircle } from "lucide-react";
+import { 
+  Download, 
+  Phone, 
+  Apple, 
+  Star, 
+  Shield, 
+  Zap, 
+  TrendingUp, 
+  CheckCircle 
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
