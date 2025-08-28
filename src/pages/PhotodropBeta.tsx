@@ -89,7 +89,11 @@ const PhotodropBeta = () => {
                 ease: "easeInOut"
               }}
             >
-              <Camera className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
+              <img 
+                src="/lovable-uploads/ee15bd62-0b06-4638-9204-8d8ceddcff13.png" 
+                alt="PhotoDrop QR Logo" 
+                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+              />
             </motion.div>
           </div>
           
