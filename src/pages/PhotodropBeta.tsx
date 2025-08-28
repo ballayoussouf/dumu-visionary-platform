@@ -92,7 +92,7 @@ const PhotodropBeta = () => {
               <img 
                 src="/lovable-uploads/ee15bd62-0b06-4638-9204-8d8ceddcff13.png" 
                 alt="PhotoDrop QR Logo" 
-                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </motion.div>
           </div>
