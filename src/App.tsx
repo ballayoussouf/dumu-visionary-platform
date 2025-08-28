@@ -11,6 +11,7 @@ import Privacy from "./pages/Privacy";
 import FastComPro from "./pages/FastComPro";
 import Pricing from "./pages/Pricing";
 import DuluBeta from "./pages/DuluBeta";
+import PhotodropBeta from "./pages/PhotodropBeta";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/fastcom-pro" element={<FastComPro />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/dulu-beta" element={<DuluBeta />} />
+          <Route path="/photodrop-beta" element={<PhotodropBeta />} />
         </Routes>
       </TooltipProvider>
     </QueryClientProvider>
