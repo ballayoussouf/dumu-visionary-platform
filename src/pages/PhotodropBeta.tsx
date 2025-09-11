@@ -20,7 +20,7 @@ const PhotodropBeta = () => {
   const handleAndroidDownload = () => {
     setDownloadingAndroid(true);
     setTimeout(() => {
-      window.open("https://dulu-finance.duckdns.org/photodrop/photodrop-pilot-release.apk", "_blank");
+      window.open("https://dulu-finance.duckdns.org/photodrop/photodrop-pilot-release-v1_0_1.apk", "_blank");
       setDownloadingAndroid(false);
     }, 1500);
   };
@@ -235,20 +235,20 @@ const PhotodropBeta = () => {
                 <h3 className="text-white font-semibold text-lg sm:text-xl mb-4 text-center">
                   Informations de version
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                  <div className="bg-white/5 p-3 rounded-lg">
-                    <div className="text-white font-semibold text-sm sm:text-base">Version</div>
-                    <div className="text-white/80 text-sm">1.0.0 Beta</div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div className="bg-white/5 p-3 rounded-lg">
+                      <div className="text-white font-semibold text-sm sm:text-base">Version</div>
+                      <div className="text-white/80 text-sm">1.0.1 Beta</div>
+                    </div>
+                    <div className="bg-white/5 p-3 rounded-lg">
+                      <div className="text-white font-semibold text-sm sm:text-base">Build</div>
+                      <div className="text-white/80 text-sm">2025.01.002</div>
+                    </div>
+                    <div className="bg-white/5 p-3 rounded-lg">
+                      <div className="text-white font-semibold text-sm sm:text-base">Dernière MAJ</div>
+                      <div className="text-white/80 text-sm">11 Sept 2025</div>
+                    </div>
                   </div>
-                  <div className="bg-white/5 p-3 rounded-lg">
-                    <div className="text-white font-semibold text-sm sm:text-base">Build</div>
-                    <div className="text-white/80 text-sm">2025.01.001</div>
-                  </div>
-                  <div className="bg-white/5 p-3 rounded-lg">
-                    <div className="text-white font-semibold text-sm sm:text-base">Dernière MAJ</div>
-                    <div className="text-white/80 text-sm">28 Août 2025</div>
-                  </div>
-                </div>
               </Card>
             </Card>
           </motion.div>
