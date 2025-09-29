@@ -12,6 +12,7 @@ import FastComPro from "./pages/FastComPro";
 import Pricing from "./pages/Pricing";
 import DuluBeta from "./pages/DuluBeta";
 import PhotodropBeta from "./pages/PhotodropBeta";
+import PhotodropTerms from "./pages/PhotodropTerms";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/dulu-beta" element={<DuluBeta />} />
           <Route path="/photodrop-beta" element={<PhotodropBeta />} />
+          <Route path="/photodrop-terms" element={<PhotodropTerms />} />
         </Routes>
       </TooltipProvider>
     </QueryClientProvider>
