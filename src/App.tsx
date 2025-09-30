@@ -13,6 +13,7 @@ import Pricing from "./pages/Pricing";
 import DuluBeta from "./pages/DuluBeta";
 import PhotodropBeta from "./pages/PhotodropBeta";
 import PhotodropTerms from "./pages/PhotodropTerms";
+import PhotodropDeleteAccount from "./pages/PhotodropDeleteAccount";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/dulu-beta" element={<DuluBeta />} />
           <Route path="/photodrop-beta" element={<PhotodropBeta />} />
           <Route path="/photodrop-terms" element={<PhotodropTerms />} />
+          <Route path="/photodrop-delete-account" element={<PhotodropDeleteAccount />} />
         </Routes>
       </TooltipProvider>
     </QueryClientProvider>
